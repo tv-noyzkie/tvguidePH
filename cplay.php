@@ -7,17 +7,19 @@ $channel_info = json_decode(file_get_contents('https://live-data-store-cdn.api.p
 $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 $xml .= "<tv date=\"" . date('Ymd') . "\" generator-info-name=\"Cignal EPG Generator\">\n";
 
+// List all channels first
 foreach ($epg_raw['data'] as $channel) {
     $key = array_search($channel['cid'], array_column($channel_info['data'], 'id'));
-
-    // Channel Info
+    
     $xml .= "  <channel id=\"" . $channel['cs'] . "\">\n";
     $xml .= "    <display-name>" . htmlspecialchars($channel_info['data'][$key]['lon'][0]['n']) . "</display-name>\n";
     $xml .= "    <icon src=\"https://qp-pldt-image-resizer-cloud-prod.akamaized.net/image/" . $channel_info['data'][$key]['id'] . "/" . $channel_info['data'][$key]['ia'][0] . ".jpg?height=150\" />\n";
     $xml .= "    <url>https://cignalplay.com</url>\n";
     $xml .= "  </channel>\n";
+}
 
-    // Program Listings
+// List all programs after channels
+foreach ($epg_raw['data'] as $channel) {
     foreach ($channel['airing'] as $programme) {
         $xml .= "  <programme start=\"" . convert_date_time_format($programme['sc_st_dt']) . "\" stop=\"" . convert_date_time_format($programme['sc_ed_dt']) . "\" channel=\"" . $channel['cs'] . "\">\n";
         $xml .= "    <title lang=\"en\">" . htmlspecialchars($programme['pgm']['lon'][0]['n']) . "</title>\n";
@@ -27,10 +29,14 @@ foreach ($epg_raw['data'] as $channel) {
     }
 }
 
-$xml .= "</tv>";
+$xml .= "</tv>\n";
 
-// Save XML file
-file_put_contents("cignal_epg.xml", $xml);
+// Save XML file with pretty print
+$dom = new DOMDocument();
+$dom->preserveWhiteSpace = false;
+$dom->formatOutput = true;
+$dom->loadXML($xml);
+file_put_contents("cignal_epg.xml", $dom->saveXML());
 
 echo "XMLTV file generated successfully: cignal_epg.xml";
 
