@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Python Dependencies
+        run: pip install requests
+
       - name: Execute EPG Generation Script
         run: php generate_epg.php
 
