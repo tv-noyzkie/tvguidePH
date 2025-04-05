@@ -1,0 +1,36 @@
+name: Generate ClickTheCity EPG
+
+on:
+  schedule:
+    - cron: '0 16 * * *' # Runs daily at 16:00 UTC (12:00 AM PHT)
+  workflow_dispatch: # Allows manual triggering from the GitHub UI
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install Python Dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Ensure Output Directory Exists
+        run: mkdir -p output/individual
+
+      - name: Execute ClickTheCity EPG Generation Script
+        run: python source/clickthecity.py
+
+      - name: Check ClickTheCity Output File
+        run: ls -l output/individual/clickthecity.xml || echo "ClickTheCity file not found"
+
+      - name: Commit and Push ClickTheCity Changes (if any)
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Automated ClickTheCity EPG data generation"
+          file_pattern: output/individual/clickthecity.xml
