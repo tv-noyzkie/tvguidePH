@@ -2,7 +2,12 @@
 require_once 'utils.php';
 
 function get_cplay_schedule_data() {
-    $epg_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d', strtotime('now in Asia/Manila')) . 'T00:00:00Z&end=' . date('Y-m-d', strtotime('now in Asia/Manila')) . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph';
+    $manila_timezone = new DateTimeZone('Asia/Manila');
+    $now_manila = new DateTime('now', $manila_timezone);
+    $today_start = $now_manila->format('Y-m-d') . 'T00:00:00Z';
+    $today_end = $now_manila->format('Y-m-d') . 'T23:59:59Z';
+
+    $epg_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . $today_start . '&end=' . $today_end . '&dt=all&client=pldt-cignal-web&reg=ph';
     $channel_info_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content?ids=%s&info=detail&mode=detail&st=published&reg=ph&dt=web&client=pldt-cignal-web&pageNumber=1&pageSize=100';
 
     echo "Fetching Cignal Play EPG data from: " . $epg_url . "\n";
@@ -79,13 +84,17 @@ function generate_cplay_epg() {
     });
 
     $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-    $xml .= "<tv date=\"" . date('Ymd', strtotime('now in Asia/Manila')) . "\" generator-info-name=\"tvguidePH\">\n";
+    $manila_timezone = new DateTimeZone('Asia/Manila');
+    $now_manila = new DateTime('now', $manila_timezone);
+    $xml .= "<tv date=\"" . $now_manila->format('Ymd') . "\" generator-info-name=\"tvguidePH\">\n";
 
     // Output channels
     foreach ($channels_with_names as $channel_item) {
         $xml .= "<channel id=\"" . htmlspecialchars($channel_item['cs']) . "\">\n";
-        $xml .= "<display-name>". htmlspecialchars($channel_item['display_name']) . "</display-name>\n";
-        $xml .= "<icon src=\"https://qp-pldt-image-resizer-cloud-prod.akamaized.net/image/" . htmlspecialchars($channel_item['info']['id']) . "/" . htmlspecialchars($channel_item['info']['ia'][0] ?? '') . ".jpg?height=150\" />\n";
+        $xml .= "<display-name>" . htmlspecialchars($channel_item['display_name']) . "</display-name>\n";
+        if (isset($channel_item['info']['ia'][0])) {
+            $xml .= "<icon src=\"https://qp-pldt-image-resizer-cloud-prod.akamaized.net/image/" . htmlspecialchars($channel_item['info']['id']) . "/" . htmlspecialchars($channel_item['info']['ia'][0]) . ".jpg?height=150\" />\n";
+        }
         $xml .= "<url>https://cignalplay.com</url>\n";
         $xml .= "</channel>\n";
     }
