@@ -28,11 +28,16 @@ jobs:
       - name: Install Python Dependencies
         run: pip install requests beautifulsoup4
 
+      - name: Ensure Output Directory Exists
+        run: |
+          mkdir -p output/individual
+          ls -l output
+
       - name: Execute EPG Generation Script
         run: php generate_epg.php
 
       - name: Check Files After MySky
-        run: ls -l output/individual/mysky_*.xml || echo "MySky file not found"
+        run: ls -l output/individual/mysky*.xml || echo "MySky file not found"
 
       - name: Check Files After CPlay
         run: ls -l output/individual/cplay.xml || echo "CPlay file not found"
