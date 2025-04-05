@@ -4,6 +4,7 @@ import re
 from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import os
 
 def fetch_channels():
     url = "https://www.clickthecity.com/tv/channels/"
@@ -85,7 +86,7 @@ def generate_epg():
 
     # Pretty print XML
     xml_str = minidom.parseString(ET.tostring(root, encoding='utf-8')).toprettyxml(indent="  ")
-    epg_path = 'output/individual/clickthecity.xml'
+    epg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output', 'individual', 'clickthecity.xml')
     print(f"Writing EPG data to {epg_path}...")
 
     with open(epg_path, "w", encoding="utf-8") as xml_file:
