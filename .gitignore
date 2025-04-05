@@ -1,0 +1,53 @@
+# Ignore Composer dependencies
+/vendor
+
+# Ignore PHP session files
+/tmp
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore output directories (we'll manage files explicitly)
+/output/individual/*
+/output/merged/*
+
+# Add any other files or directories you want to ignore
+Prompt: Please check the content of your .gitignore file on GitHub. Does it match the content above? If there are any differences, you can edit the file to match and commit the changes. Let me know once your .gitignore file is up to date.
+
+2. Content of README.md:
+
+On your GitHub repository, open the README.md file. It should contain something similar to this (you might have added more details, which is fine):
+
+Markdown
+
+# EPG Merger Philippines
+
+This project aims to fetch and merge Electronic Program Guide (EPG) data from various sources in the Philippines into a single XMLTV file.
+
+## Sources
+
+* cplay.php
+* blast.php
+* clickthecity.py
+* mysky.php
+
+## Output
+
+* Individual XML files will be in `output/individual/`.
+* The final merged XMLTV file will be in `output/merged/`.
+
+## Usage
+
+(Instructions on how to run the scripts will be added here)
