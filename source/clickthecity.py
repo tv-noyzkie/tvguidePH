@@ -101,7 +101,7 @@ def generate_epg():
 
     # Pretty print XML
     xml_str = minidom.parseString(ET.tostring(root, encoding='utf-8')).toprettyxml(indent="  ")
-    epg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output', 'individual', 'clickthecity.xml')
+    epg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output', 'clickthecity.xml')
     print(f"Writing ClickTheCity EPG data to {epg_path}...")
 
     try:
