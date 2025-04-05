@@ -96,12 +96,6 @@
   <channel id="143">
     <display-name>GTV</display-name>
   </channel>
-  <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="4">
-    <title>Ulat Bayan Weekend</title>
-  </programme>
-  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="4">
-    <title>Jesus Miracle Crusade</title>
-  </programme>
   <programme start="20250405070000 +0000" stop="20250405073000 +0000" channel="4">
     <title>PBBM Bloc</title>
   </programme>
@@ -168,11 +162,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="4">
     <title>Ulat Bayan Weekend</title>
   </programme>
-  <programme start="20250405211500 +0000" stop="20250405214500 +0000" channel="5">
-    <title>Cine Cinco Hits</title>
-  </programme>
-  <programme start="20250405231500 +0000" stop="20250405234500 +0000" channel="5">
-    <title>Rated Korina</title>
+  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="4">
+    <title>Bagong Pilipinas Ngayon</title>
   </programme>
   <programme start="20250405001500 +0000" stop="20250405004500 +0000" channel="5">
     <title>Wow Mali, Doble Tawa</title>
@@ -225,17 +216,8 @@
   <programme start="20250405214500 +0000" stop="20250405221500 +0000" channel="5">
     <title>America's Got Talent</title>
   </programme>
-  <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="2">
-    <title>Daig Kayo Ng Lola Ko</title>
-  </programme>
-  <programme start="20250405221500 +0000" stop="20250405224500 +0000" channel="2">
-    <title>I-Witness</title>
-  </programme>
-  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="2">
-    <title>Reporter's Notebook</title>
-  </programme>
-  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="2">
-    <title>Dear SV</title>
+  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="5">
+    <title>CCF Worship Service</title>
   </programme>
   <programme start="20250405053000 +0000" stop="20250405060000 +0000" channel="2">
     <title>Key Of David</title>
@@ -290,6 +272,12 @@
   </programme>
   <programme start="20250405201500 +0000" stop="20250405204500 +0000" channel="2">
     <title>Kapuso Mo, Jessica Soho</title>
+  </programme>
+  <programme start="20250405220500 +0000" stop="20250405223500 +0000" channel="2">
+    <title>The Boobay and Tekla Show</title>
+  </programme>
+  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="2">
+    <title>Cayetano in Action with Boy Abunda</title>
   </programme>
   <programme start="20250405070000 +0000" stop="20250405073000 +0000" channel="7">
     <title>PBBM - RTVM</title>
@@ -351,9 +339,6 @@
   <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="7">
     <title>Proudly ASEAN</title>
   </programme>
-  <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="137">
-    <title>The Girl With The Dragon Tattoo</title>
-  </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="137">
     <title>Genghis Bond</title>
   </programme>
@@ -396,11 +381,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="137">
     <title>Bird</title>
   </programme>
-  <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="13">
-    <title>Asian Le Mans Series</title>
-  </programme>
-  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="13">
-    <title>Metabeats</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="137">
+    <title>My Sweet Lie</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="13">
     <title>The World Tonight</title>
@@ -513,11 +495,17 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="13">
     <title>Executive Class</title>
   </programme>
-  <programme start="20250405214500 +0000" stop="20250405221500 +0000" channel="126">
-    <title>S.W.A.T. (Season 8)</title>
+  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="13">
+    <title>Asian Air Safari</title>
   </programme>
-  <programme start="20250405224000 +0000" stop="20250405231000 +0000" channel="126">
-    <title>Kraven The Hunter</title>
+  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="13">
+    <title>Women of Style</title>
+  </programme>
+  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="13">
+    <title>On Cue</title>
+  </programme>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="13">
+    <title>G Diaries: Stronger Together</title>
   </programme>
   <programme start="20250405010000 +0000" stop="20250405013000 +0000" channel="126">
     <title>LIV Golf Miami 2025</title>
@@ -560,12 +548,6 @@
   </programme>
   <programme start="20250405214500 +0000" stop="20250405221500 +0000" channel="126">
     <title>Bad Boys For Life</title>
-  </programme>
-  <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="168">
-    <title>Gintama S2</title>
-  </programme>
-  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="168">
-    <title>Haikyu!!</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="168">
     <title>Ragna Crimson</title>
@@ -612,14 +594,8 @@
   <programme start="20250405210000 +0000" stop="20250405213000 +0000" channel="168">
     <title>Reincarnated As A Sword</title>
   </programme>
-  <programme start="20250405203500 +0000" stop="20250405210500 +0000" channel="180">
-    <title>Oxenfree</title>
-  </programme>
-  <programme start="20250405221500 +0000" stop="20250405224500 +0000" channel="180">
-    <title>One Last Thing</title>
-  </programme>
-  <programme start="20250405235000 +0000" stop="20250406002000 +0000" channel="180">
-    <title>Drum</title>
+  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="168">
+    <title>Ragna Crimson</title>
   </programme>
   <programme start="20250405013000 +0000" stop="20250405020000 +0000" channel="180">
     <title>Nim's Island</title>
@@ -660,11 +636,11 @@
   <programme start="20250405204000 +0000" stop="20250405211000 +0000" channel="180">
     <title>Made Of Honor</title>
   </programme>
-  <programme start="20250405210500 +0000" stop="20250405213500 +0000" channel="181">
-    <title>No. 82 Haunted House</title>
+  <programme start="20250405222000 +0000" stop="20250405225000 +0000" channel="180">
+    <title>Operation: Neighborhood Watch!</title>
   </programme>
-  <programme start="20250405223500 +0000" stop="20250405230500 +0000" channel="181">
-    <title>The Shadow Whip</title>
+  <programme start="20250405235500 +0000" stop="20250406002500 +0000" channel="180">
+    <title>Oxenfree</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="181">
     <title>The Duel</title>
@@ -705,11 +681,8 @@
   <programme start="20250405210000 +0000" stop="20250405213000 +0000" channel="181">
     <title>The Battle at Lake Changjin</title>
   </programme>
-  <programme start="20250405210000 +0000" stop="20250405213000 +0000" channel="82">
-    <title>OTJ: On The Job</title>
-  </programme>
-  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="82">
-    <title>Silip</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="181">
+    <title>Executioners From Shaolin</title>
   </programme>
   <programme start="20250405010000 +0000" stop="20250405013000 +0000" channel="82">
     <title>Jack En The Magic Beans</title>
@@ -744,17 +717,8 @@
   <programme start="20250405210000 +0000" stop="20250405213000 +0000" channel="82">
     <title>Biyudo Si Daddy, Biyuda Si Mommy</title>
   </programme>
-  <programme start="20250405211500 +0000" stop="20250405214500 +0000" channel="163">
-    <title>The First 48 S24</title>
-  </programme>
-  <programme start="20250405220500 +0000" stop="20250405223500 +0000" channel="163">
-    <title>The First 48 S24</title>
-  </programme>
-  <programme start="20250405225500 +0000" stop="20250405232500 +0000" channel="163">
-    <title>Digital Addiction</title>
-  </programme>
-  <programme start="20250405234500 +0000" stop="20250406001500 +0000" channel="163">
-    <title>Booked: First Day In</title>
+  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="82">
+    <title>Onsehan</title>
   </programme>
   <programme start="20250405003500 +0000" stop="20250405010500 +0000" channel="163">
     <title>The First 48 S24</title>
@@ -831,14 +795,11 @@
   <programme start="20250405215500 +0000" stop="20250405222500 +0000" channel="163">
     <title>Interrogation Raw S2</title>
   </programme>
-  <programme start="20250405215500 +0000" stop="20250405222500 +0000" channel="162">
-    <title>The Bermuda Triangle: Into Cursed Waters</title>
+  <programme start="20250405224500 +0000" stop="20250405231500 +0000" channel="163">
+    <title>Witness To Murder: Digital Evidence</title>
   </programme>
-  <programme start="20250405225000 +0000" stop="20250405232000 +0000" channel="162">
-    <title>Alone S10</title>
-  </programme>
-  <programme start="20250405234500 +0000" stop="20250406001500 +0000" channel="162">
-    <title>Alone: The Skills Challenge</title>
+  <programme start="20250405233500 +0000" stop="20250406000500 +0000" channel="163">
+    <title>Booked: First Day In</title>
   </programme>
   <programme start="20250405004000 +0000" stop="20250405011000 +0000" channel="162">
     <title>The Curse Of Oak Island S10</title>
@@ -912,6 +873,9 @@
   <programme start="20250405215500 +0000" stop="20250405222500 +0000" channel="162">
     <title>FDR (Franklin D. Roosevelt)</title>
   </programme>
+  <programme start="20250405234500 +0000" stop="20250406001500 +0000" channel="162">
+    <title>Forged In Fire S8</title>
+  </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="179">
     <title>ASAP Remix</title>
   </programme>
@@ -948,11 +912,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="179">
     <title>ASAP Natin 'To</title>
   </programme>
-  <programme start="20250405211500 +0000" stop="20250405214500 +0000" channel="184">
-    <title>Mega Blockbusters</title>
-  </programme>
-  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="184">
-    <title>Super Kapamilya Blockbuster Movie</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="179">
+    <title>Home Along Da Riles</title>
   </programme>
   <programme start="20250405001500 +0000" stop="20250405004500 +0000" channel="184">
     <title>Movie Central Presents</title>
@@ -1008,11 +969,8 @@
   <programme start="20250405203000 +0000" stop="20250405210000 +0000" channel="184">
     <title>Mega Blockbusters</title>
   </programme>
-  <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="142">
-    <title>Mang Jose</title>
-  </programme>
-  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="142">
-    <title>Wander Bra</title>
+  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="184">
+    <title>Sunday's Best</title>
   </programme>
   <programme start="20250405013000 +0000" stop="20250405020000 +0000" channel="142">
     <title>Dama De Noche</title>
@@ -1050,8 +1008,8 @@
   <programme start="20250405213000 +0000" stop="20250405220000 +0000" channel="142">
     <title>Xenoa 2</title>
   </programme>
-  <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="178">
-    <title>The Canton Godfather</title>
+  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="142">
+    <title>Katawan</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="178">
     <title>Shark: The Beginning</title>
@@ -1089,11 +1047,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="178">
     <title>Midnight</title>
   </programme>
-  <programme start="20250405200000 +0000" stop="20250405203000 +0000" channel="155">
-    <title>Magdusa Ka</title>
-  </programme>
-  <programme start="20250405221500 +0000" stop="20250405224500 +0000" channel="155">
-    <title>Paracale Gang</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="178">
+    <title>The Hitman's Bodyguard</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="155">
     <title>Anino Sa Dilim</title>
@@ -1131,11 +1086,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="155">
     <title>Bangkay Mo Akong Hahakbangan</title>
   </programme>
-  <programme start="20250405210000 +0000" stop="20250405213000 +0000" channel="133">
-    <title>Sine Throwback</title>
-  </programme>
-  <programme start="20250405230000 +0000" stop="20250405233000 +0000" channel="133">
-    <title>Letters and Music</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="155">
+    <title>Paradise Inn</title>
   </programme>
   <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="133">
     <title>INC and The Bible</title>
@@ -1230,11 +1182,8 @@
   <programme start="20250405220000 +0000" stop="20250405223000 +0000" channel="133">
     <title>INCinema</title>
   </programme>
-  <programme start="20250405211500 +0000" stop="20250405214500 +0000" channel="189">
-    <title>Mega Blockbusters</title>
-  </programme>
-  <programme start="20250405224500 +0000" stop="20250405231500 +0000" channel="189">
-    <title>Jesus The Healer</title>
+  <programme start="20250405000000 +0000" stop="20250405003000 +0000" channel="133">
+    <title>Ang Iglesia Ni Cristo</title>
   </programme>
   <programme start="20250405060000 +0000" stop="20250405063000 +0000" channel="189">
     <title>Shuffle</title>
@@ -1278,14 +1227,8 @@
   <programme start="20250405203000 +0000" stop="20250405210000 +0000" channel="189">
     <title>Mega Blockbusters</title>
   </programme>
-  <programme start="20250405214500 +0000" stop="20250405221500 +0000" channel="143">
-    <title>Daig Kayo Ng Lola Ko</title>
-  </programme>
-  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="143">
-    <title>Cayetano in Action with Boy Abunda</title>
-  </programme>
-  <programme start="20250405233000 +0000" stop="20250406000000 +0000" channel="143">
-    <title>In Touch with Dr. Charles Stanley</title>
+  <programme start="20250405223000 +0000" stop="20250405230000 +0000" channel="189">
+    <title>Diyos At Bayan</title>
   </programme>
   <programme start="20250405060000 +0000" stop="20250405063000 +0000" channel="143">
     <title>Where's Chicky?</title>
@@ -1337,5 +1280,8 @@
   </programme>
   <programme start="20250405212500 +0000" stop="20250405215500 +0000" channel="143">
     <title>Kapuso Mo, Jessica Soho</title>
+  </programme>
+  <programme start="20250405230500 +0000" stop="20250405233500 +0000" channel="143">
+    <title>The Boobay and Tekla Show</title>
   </programme>
 </tv>
