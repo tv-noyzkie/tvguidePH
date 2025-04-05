@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="tvguidePH - MySky" generator-info-url="">
-  <channel id="323">
-    <display-name lang="en">A2Z</display-name>
-  </channel>
   <channel id="130">
     <display-name lang="en">ABC AUSTRALIA</display-name>
   </channel>
@@ -156,9 +153,6 @@
   <channel id="242">
     <display-name lang="en">KIX HD</display-name>
   </channel>
-  <channel id="5">
-    <display-name lang="en">KNOWLEDGE CHANNEL</display-name>
-  </channel>
   <channel id="65">
     <display-name lang="en">LIFETIME </display-name>
   </channel>
@@ -282,849 +276,703 @@
   <channel id="297">
     <display-name lang="en">ZOO MOO</display-name>
   </channel>
-  <programme start="20250405211500 +0800" stop="20250405223000 +0800" channel="323">
-    <title lang="en">Mega Blockbusters</title>
+  <programme start="20250406023000 +0800" stop="20250406030000 +0800" channel="130">
+    <title lang="en">The World This Week</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250406060000 +0800" channel="323">
-    <title lang="en">Jesus The Healer</title>
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="130">
+    <title lang="en">On Country Kitchen</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405230000 +0800" channel="130">
-    <title lang="en">Weekend Breakfast</title>
+  <programme start="20250406033000 +0800" stop="20250406035500 +0800" channel="130">
+    <title lang="en">Paradise Kitchen Bali</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="40">
-    <title lang="en">Just Animals S2</title>
+  <programme start="20250406035500 +0800" stop="20250406040000 +0800" channel="130">
+    <title lang="en">Beyond Awesome</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="40">
-    <title lang="en">Jewels Of The Natural World S1</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="130">
+    <title lang="en">Tom Gleesons Secrets of the Australian Museum</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="40">
-    <title lang="en">Jewels Of The Natural World S1</title>
+  <programme start="20250406024000 +0800" stop="20250406033500 +0800" channel="40">
+    <title lang="en">Crikey! Its The Irwins S4</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="293">
-    <title lang="en">Just Animals S2</title>
+  <programme start="20250406033500 +0800" stop="20250406043000 +0800" channel="40">
+    <title lang="en">Big, Small &amp; Deadly S1</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="293">
-    <title lang="en">Jewels Of The Natural World S1</title>
+  <programme start="20250406024000 +0800" stop="20250406033500 +0800" channel="293">
+    <title lang="en">Crikey! Its The Irwins S4</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="293">
-    <title lang="en">Jewels Of The Natural World S1</title>
+  <programme start="20250406033500 +0800" stop="20250406043000 +0800" channel="293">
+    <title lang="en">Big, Small &amp; Deadly S1</title>
   </programme>
-  <programme start="20250405205600 +0800" stop="20250405213000 +0800" channel="46">
-    <title lang="en">SUICIDE SQUAD ISEKAI</title>
-    <desc lang="en">Back in the royal capital after their epic triumph, the Suicide Squad are in for a rude awakening.</desc>
+  <programme start="20250406023000 +0800" stop="20250406030000 +0800" channel="46">
+    <title lang="en">POLICE IN A POD</title>
+    <desc lang="en">Fuji and Minamoto rush to the accident scene in a police car. Kawai accidentally gets in Minamotos car where she sees</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405215800 +0800" channel="46">
-    <title lang="en">GINTAMA SEASON 2</title>
-    <desc lang="en">Catherine was a famous cat burglar in the galaxy. Now, her old pals come to her and ask her to help with her ability.</desc>
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="46">
+    <title lang="en">POLICE IN A POD</title>
+    <desc lang="en">Kawai and Fuji are appointed to dog a drug dealer and his mistress. Kawai pairs up with Minamoto while Fuji with Yamada.</desc>
   </programme>
-  <programme start="20250405215800 +0800" stop="20250405222600 +0800" channel="46">
-    <title lang="en">GINTAMA SEASON 2</title>
-    <desc lang="en">Many passionate otakus have gathered in Akihabara. Thats because the new Bentendo OWee game console is going on sale.</desc>
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="46">
+    <title lang="en">BEAST TAMER</title>
+    <desc lang="en">Kanade and others burst into Edgars house. Rein, Sora, and Lura seize the opportunity to rescue the prisoners.</desc>
   </programme>
-  <programme start="20250405222600 +0800" stop="20250405230000 +0800" channel="46">
-    <title lang="en">GINTAMA SEASON 2</title>
-    <desc lang="en">The manager of Yodobatsu Camera proposes the customers separate into 2 teams to compete to win the OWee.</desc>
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="46">
+    <title lang="en">BEAST TAMER</title>
+    <desc lang="en">Rein and others gather all their power to fight against the demons which destroy the street but are trapped by demons.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="22">
-    <title lang="en">Sour, Salty And Alive? S1</title>
-    <desc lang="en">Eaten by billions of people on the planet,rice is the vital grain that is the base of countless ethnic ferments.</desc>
+  <programme start="20250406024500 +0800" stop="20250406031000 +0800" channel="22">
+    <title lang="en">At Home With Marinka S1</title>
+    <desc lang="en">Marinkas recipes for entertaining will impress dinner guests and showcase unique Indonesian flavors for the modern palate.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="22">
-    <title lang="en">Sour, Salty And Alive? S1</title>
-    <desc lang="en">A rich bounty from the sea is pickled and fermented, altered by microbes and good bacteria to become a mouthwatering, wild feast.</desc>
+  <programme start="20250406031000 +0800" stop="20250406034000 +0800" channel="22">
+    <title lang="en">At Home With Marinka S1</title>
+    <desc lang="en">Marinka leads a hectic and busy lifestyle on a tight schedule. Most days, all she needs is a simple yet tasty and nutritious dish.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="22">
+  <programme start="20250406034000 +0800" stop="20250406040500 +0800" channel="22">
     <title lang="en">Trishas Southern Kitchen S17</title>
     <desc lang="en">Trisha Yearwood and her sister organize a fun family competition of backyard bowling and cook up a party spread of White Pizza Dip, Pizza Salad with Pesto Crust Croutons</desc>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="22">
+  <programme start="20250406040500 +0800" stop="20250406043500 +0800" channel="22">
     <title lang="en">Trishas Southern Kitchen S17</title>
     <desc lang="en">Trisha Yearwoods sister has moved to Nashville, so they make a welcome home meal using peaches from her new orchard!</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="248">
-    <title lang="en">Sour, Salty And Alive? S1</title>
+  <programme start="20250406024500 +0800" stop="20250406031000 +0800" channel="248">
+    <title lang="en">At Home With Marinka S1</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="248">
-    <title lang="en">Sour, Salty And Alive? S1</title>
+  <programme start="20250406031000 +0800" stop="20250406034000 +0800" channel="248">
+    <title lang="en">At Home With Marinka S1</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="248">
+  <programme start="20250406034000 +0800" stop="20250406040500 +0800" channel="248">
     <title lang="en">Trishas Southern Kitchen S17</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="248">
+  <programme start="20250406040500 +0800" stop="20250406043500 +0800" channel="248">
     <title lang="en">Trishas Southern Kitchen S17</title>
   </programme>
-  <programme start="20250405214500 +0800" stop="20250405224000 +0800" channel="49">
-    <title lang="en">S.W.A.T. SEASON 8</title>
-    <desc lang="en">Inspired by the television series and the feature film, S.W.A.T. stars Shemar Moore as a locally born and raised S.W.A.T. sergeant newly tasked to run a specialized tactical unit that is the last stop in law enforcement in Los Angeles.</desc>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="30">
+    <title lang="en">The Deal with Alex Rodriguez and Jason Kelly</title>
+    <desc lang="en">Josh Richards. Alex Rodriguez and Jason Kelly talk with TikTok star and founder of CrossCheck Studios Josh Richards about audience development and how sports teams should leverage social media.</desc>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250406010000 +0800" channel="49">
-    <title lang="en">KRAVEN THE HUNTER</title>
-    <desc lang="en">Villains arent born. Theyre made. Kraven the Hunter is the visceral story about how and why one of Marvels most iconic villains came to be. Set before his notorious vendetta with SpiderMan, Aaron TaylorJohnson stars as the titular character in the film.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="30">
+    <title lang="en">The Deal with Alex Rodriguez and Jason Kelly</title>
+    <desc lang="en">Ted Leonsis. Alex and Jason talk with Ted Leonsis, the founder of Monumental Sports &amp; Entertainment, about how winning sports teams can help turn Washington into a super city.</desc>
   </programme>
-  <programme start="20250405214500 +0800" stop="20250405224000 +0800" channel="247">
-    <title lang="en">S.W.A.T. SEASON 8</title>
-    <desc lang="en">Inspired by the television series and the feature film, S.W.A.T. stars Shemar Moore as a locally born and raised S.W.A.T. sergeant newly tasked to run a specialized tactical unit that is the last stop in law enforcement in Los Angeles.</desc>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="43">
+    <title lang="en">Regular Show</title>
+    <desc lang="en">Rigbys estranged accountant brother comes back to help save the park from an audit. While everyone loves Don, Rigby wants nothing to do with him.</desc>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250406010000 +0800" channel="247">
-    <title lang="en">KRAVEN THE HUNTER</title>
-    <desc lang="en">Villains arent born. Theyre made. Kraven the Hunter is the visceral story about how and why one of Marvels most iconic villains came to be. Set before his notorious vendetta with SpiderMan, Aaron TaylorJohnson stars as the titular character in the film.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="43">
+    <title lang="en">Chowder</title>
+    <desc lang="en">Gazpacho takes Chowder and his fellow apprentice scouts on the most gruelling outing of their lives.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="30">
-    <title lang="en">The David Rubenstein Show</title>
-    <desc lang="en">Brandie Smith, Smithsonian National Zoo Director. David Rubenstein in conversation with Smithsonian National Zoo Director Brandie Smith.</desc>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="178">
+    <title lang="en">Regular Show</title>
+    <desc lang="en">Rigbys estranged accountant brother comes back to help save the park from an audit. While everyone loves Don, Rigby wants nothing to do with him.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="30">
-    <title lang="en">Quantum Marketing</title>
-    <desc lang="en">We speak with Pranav Yadav, CEO of NeuroInsight, about the marketing intelligence his company is gleaning from neuroscience.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="178">
+    <title lang="en">Chowder</title>
+    <desc lang="en">Gazpacho takes Chowder and his fellow apprentice scouts on the most gruelling outing of their lives.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="30">
-    <title lang="en">Bloomberg Wall Street Week</title>
-    <desc lang="en">A weekly program telling the stories of capitalism from around the world, hosted by David Westin in New York.</desc>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="118">
+    <title lang="en">Brave Bunnies</title>
+    <desc lang="en">In the Jungle, the Brave Bunnies meet FlouLou the LEMUR. He shows off his musical instrument a bamboo fence with kitchen utensils tied to it.</desc>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405214500 +0800" channel="43">
-    <title lang="en">Unikitty</title>
-    <desc lang="en">Dr. Fox reprograms the P.L.O.T. Device to only generate boring events, but the gang cant help but add drama and excitement to every scenario.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="118">
+    <title lang="en">Mumfie</title>
+    <desc lang="en">Zafir has organized an orienteering competition and all the competitors must work in pairs. Mumfie is delighted to take part but finds himself paired up with Yoyo.</desc>
   </programme>
-  <programme start="20250405214500 +0800" stop="20250405221500 +0800" channel="43">
-    <title lang="en">The Powerpuff Girls</title>
-    <desc lang="en">While visiting the lake, Buttercup vows to capture a legendary uncatchable crawdad.</desc>
+  <programme start="20250406035500 +0800" stop="20250406053500 +0800" channel="97">
+    <title lang="en">Lovers Rock</title>
+    <desc lang="en">Pan Lei, winner the China Literary Award for three consecutive years, wrote and directed this film about the lives and loves of a fishing village. It starred the glorious Cheng Peipei in her first film as a woman she had debuted in a mans role, and her muchlauded performance won her the prestigious Golden Accolade Award from the International Association Of Independent Producers a first for any Asian woman.</desc>
   </programme>
-  <programme start="20250405221500 +0800" stop="20250405231500 +0800" channel="43">
-    <title lang="en">Adventure Time</title>
-    <desc lang="en">Finn and Jake hold a contest to see who can last longer without talking.</desc>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="178">
-    <title lang="en">The Tom And Jerry Show</title>
-    <desc lang="en">On vacation in the west with Rick and Ginger, Tom and Jerry encounter the legendary Jackalope!</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="178">
-    <title lang="en">Adventure Time</title>
-    <desc lang="en">The Ice King tries to win Princess Bubblegum over with his love potion.</desc>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="118">
-    <title lang="en">Mecha Builders</title>
-    <desc lang="en">Farmer MacBarm is hosting the first annual Sunny Field Farm Chicken Roll.  The Ranger Tower is the perfect place to see Pinecones Comet, so what should Ranger Nat do when his telescope falls to the bottom of the cliff?</desc>
-  </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="118">
-    <title lang="en">Mecha Builders</title>
-    <desc lang="en">Its the Pretty Big All City Read and Izzy and Barb are all set up, until all the books end up missing on account of the yip yips.  Pretty Big City finds itself in a sticky situation when the factory starts spewing super sticky slime!</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="118">
-    <title lang="en">Bugs Bunny Builders</title>
-    <desc lang="en">The Beaver Brothers hire The Looney Builders to build them a log cabin, but soon sidetrack the job by goofing around too much.</desc>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405225000 +0800" channel="97">
-    <title lang="en">The Dream of the Red Chamber</title>
-    <desc lang="en">Adapted from the most widely read and filmed novel in Chinese history, this version is said to be the most successful one. Betty Lohs looks, demeanour and aura in her portrayal of Lin Dai Yu has won her the epithet Classic Beauty.</desc>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250406003000 +0800" channel="97">
-    <title lang="en">Clan Of The White Lotus</title>
-    <desc lang="en">The head of White Lotus Clan, Lo, is a highly skilled martial artist who supports the Qing government and helps destroy the rebellion group. Hung from Shaolin who kills Los brother, is being hunted and hides in another rebel Hus house. The clan attacks at night killing Hu and his sister, but Hung manages to get Hus pregnant wife to safety.</desc>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405210200 +0800" channel="109">
-    <title lang="en">Headline News</title>
-    <desc lang="en">35</desc>
-  </programme>
-  <programme start="20250405210200 +0800" stop="20250405220000 +0800" channel="109">
-    <title lang="en">No Ordinary Rescue S2</title>
-    <desc lang="en">192</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="109">
-    <title lang="en">Singapore Tonight</title>
-    <desc lang="en">107</desc>
-  </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="109">
+  <programme start="20250406023000 +0800" stop="20250406030000 +0800" channel="109">
     <title lang="en">On The Red Dot</title>
     <desc lang="en">117</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405230000 +0800" channel="56">
-    <title lang="en">ON THE JOB</title>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="109">
+    <title lang="en">Singapores Public Housing Revealed</title>
+    <desc lang="en">137</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405230000 +0800" channel="184">
-    <title lang="en">King of Devils Island</title>
-    <desc lang="en">Norwegian winter, early 20th century. On the boys home Bastoy, a new inmate leads the boys to a violent uprising against a brutal regime. How far is he willing to go to attain freedom? Based on a true story.</desc>
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="109">
+    <title lang="en">Asia Tonight</title>
+    <desc lang="en">141</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250406002000 +0800" channel="36">
-    <title lang="en">CATCH ME IF YOU CAN</title>
-    <desc lang="en">FBI agent Tom Hanks goes after con artist Leonardo DiCaprio in this catandmouse caper by Steven Spielberg.</desc>
+  <programme start="20250406030000 +0800" stop="20250406050000 +0800" channel="56">
+    <title lang="en">INA, KASUSUKLAMAN BA KITA?</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250406002000 +0800" channel="198">
-    <title lang="en">CATCH ME IF YOU CAN</title>
-    <desc lang="en">FBI agent Tom Hanks goes after con artist Leonardo DiCaprio in this catandmouse caper by Steven Spielberg.</desc>
+  <programme start="20250406023500 +0800" stop="20250406043000 +0800" channel="184">
+    <title lang="en">Cloud Under The Roof</title>
+    <desc lang="en">Paul, Julia, and Lilly are a happy family, until Julia dies unexpectedly. For the sake of his daughter, Paul wants to function and suppress his grief. Lilly keeps challenging him with her imagination and her very own view of Mums death.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405230000 +0800" channel="7">
+  <programme start="20250406024500 +0800" stop="20250406041000 +0800" channel="36">
+    <title lang="en">THE SHALLOWS</title>
+    <desc lang="en">A surfer finds herself on the feeding ground of a great white shark. Though she is stranded only 200 yards from shore, survival proves to be a test of wills.</desc>
+  </programme>
+  <programme start="20250406041000 +0800" stop="20250406060000 +0800" channel="36">
+    <title lang="en">OVERLORD</title>
+    <desc lang="en">DDay invasion finds two paratroopers caught behind enemy lines fighting Nazis and supernatural forces, resulting from a secret Nazi experiment.</desc>
+  </programme>
+  <programme start="20250406024500 +0800" stop="20250406041000 +0800" channel="198">
+    <title lang="en">THE SHALLOWS</title>
+    <desc lang="en">A surfer finds herself on the feeding ground of a great white shark. Though she is stranded only 200 yards from shore, survival proves to be a test of wills.</desc>
+  </programme>
+  <programme start="20250406041000 +0800" stop="20250406060000 +0800" channel="198">
+    <title lang="en">OVERLORD</title>
+    <desc lang="en">DDay invasion finds two paratroopers caught behind enemy lines fighting Nazis and supernatural forces, resulting from a secret Nazi experiment.</desc>
+  </programme>
+  <programme start="20250406030000 +0800" stop="20250406050000 +0800" channel="7">
     <title lang="en">ZALDONG TISOY IAN VENERACION</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="28">
-    <title lang="en">Smerconish Saturday, April 5, 2025 9AM</title>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="28">
+    <title lang="en">The Whole Story with Anderson Cooper Fentanyl in America A Way Out</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="28">
-    <title lang="en">CNN Saturday Morning Table For Five Saturday, April 5, 2025 10AM</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="28">
+    <title lang="en">CNN Newsroom CNNUS Saturday, April 5, 2025 4PM</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="181">
-    <title lang="en">Smerconish Saturday, April 5, 2025 9AM</title>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="181">
+    <title lang="en">The Whole Story with Anderson Cooper Fentanyl in America A Way Out</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="181">
-    <title lang="en">CNN Saturday Morning Table For Five Saturday, April 5, 2025 10AM</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="181">
+    <title lang="en">CNN Newsroom CNNUS Saturday, April 5, 2025 4PM</title>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405220500 +0800" channel="99">
-    <title lang="en">The First 48 S24</title>
-    <desc lang="en">In Mobile, a 70yearold Vietnam vet is found beaten to death in his home where detectives discover threatening letters. In New Orleans, Detective Amy Robinson works the case of a man shot behind a store.</desc>
+  <programme start="20250406031000 +0800" stop="20250406040500 +0800" channel="99">
+    <title lang="en">Hoarders S14</title>
+    <desc lang="en">Marjorie has collected items from thrift stores and estate sales over the years for various projects, which has led to a massive amount of clutter in her home, making living in the space very difficult.</desc>
   </programme>
-  <programme start="20250405220500 +0800" stop="20250405225500 +0800" channel="99">
-    <title lang="en">After The First 48 S14</title>
-    <desc lang="en">Gwinnett County detectives investigate the murder of an innocent fifteenyearold, caught up in a petty crime. But how will the prosecution take on a witness who claims the shooter acted in selfdefense?</desc>
+  <programme start="20250406040500 +0800" stop="20250406050000 +0800" channel="99">
+    <title lang="en">Beyond The Headlines The Series</title>
+    <desc lang="en">Five women share their harrowing accounts of abduction and imprisonment. They discuss what happens when the news coverage dies down and how theyve healed from the trauma they experienced.</desc>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405220500 +0800" channel="203">
-    <title lang="en">The First 48 S24</title>
-    <desc lang="en">In Mobile, a 70yearold Vietnam vet is found beaten to death in his home where detectives discover threatening letters. In New Orleans, Detective Amy Robinson works the case of a man shot behind a store.</desc>
+  <programme start="20250406031000 +0800" stop="20250406040500 +0800" channel="203">
+    <title lang="en">Hoarders S14</title>
+    <desc lang="en">Marjorie has collected items from thrift stores and estate sales over the years for various projects, which has led to a massive amount of clutter in her home, making living in the space very difficult.</desc>
   </programme>
-  <programme start="20250405220500 +0800" stop="20250405225500 +0800" channel="203">
-    <title lang="en">After The First 48 S14</title>
-    <desc lang="en">Gwinnett County detectives investigate the murder of an innocent fifteenyearold, caught up in a petty crime. But how will the prosecution take on a witness who claims the shooter acted in selfdefense?</desc>
+  <programme start="20250406040500 +0800" stop="20250406050000 +0800" channel="203">
+    <title lang="en">Beyond The Headlines The Series</title>
+    <desc lang="en">Five women share their harrowing accounts of abduction and imprisonment. They discuss what happens when the news coverage dies down and how theyve healed from the trauma they experienced.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405211500 +0800" channel="132">
+  <programme start="20250406030000 +0800" stop="20250406031500 +0800" channel="132">
     <title lang="en">DW News</title>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405213000 +0800" channel="132">
-    <title lang="en">Shift</title>
+  <programme start="20250406031500 +0800" stop="20250406033000 +0800" channel="132">
+    <title lang="en">Reporter</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="132">
-    <title lang="en">DW News</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405220300 +0800" channel="132">
-    <title lang="en">DW News</title>
-  </programme>
-  <programme start="20250405220300 +0800" stop="20250405230000 +0800" channel="132">
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="132">
     <title lang="en">DocFilm</title>
-    <desc lang="en">The trauma of the genocide against the Tutsi in Rwanda is stilled etched in the lives of survivors. A Rwandan organization uses creativity to soothe the psychological wounds and ensure that history does not repeat itself.</desc>
+    <desc lang="en">Corona, AIDS and the Spanish flu have claimed many millions of lives. Now, researchers around the world are trying to better predict and prevent pandemics like these in the future.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405215000 +0800" channel="164">
-    <title lang="en">Fukushima On The Frontline A New Hope</title>
-    <desc lang="en">ExNavy Seal and TV host Joel Lambert embarks on a return journey to Fukushima to see how the region is progressing.</desc>
+  <programme start="20250406040000 +0800" stop="20250406041500 +0800" channel="132">
+    <title lang="en">DW News</title>
   </programme>
-  <programme start="20250405215000 +0800" stop="20250405224000 +0800" channel="164">
+  <programme start="20250406041500 +0800" stop="20250406043000 +0800" channel="132">
+    <title lang="en">Sports Life</title>
+    <desc lang="en">Arezo Ahmadi fled from Afghanistan to fulfill her dream of becoming a mixed martial arts fighter. Shes a symbol of defiance and a future that so many young Afghan women are denied. But Arezos situation is unsafe. Political tensions are growing, Afghan immigrants are constantly stopped at checkpoints and threatened with expulsion, and even her journey to the gym has become fraught with danger.</desc>
+  </programme>
+  <programme start="20250406025000 +0800" stop="20250406034000 +0800" channel="164">
     <title lang="en">The Magical World Of Spices S1</title>
-    <desc lang="en">Sri Lanka, known for its rich flora and fauna, is the cradle of Ceylon cinnamon. European powers once fought for the cinnamon monopoly.</desc>
+    <desc lang="en">The Moluccas Islands once were the spice chambers of Europe. Cloves and nutmeg were only grown on the remote islands, which today are part of Indonesia.</desc>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250405233000 +0800" channel="164">
+  <programme start="20250406034000 +0800" stop="20250406043000 +0800" channel="164">
     <title lang="en">The Crawl S1</title>
     <desc lang="en">THE CRAWL is a food and travel special that aims to showcasethecuisine andthemany delicious delicacies of a featured place.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405215500 +0800" channel="39">
-    <title lang="en">Expedition Unknown S9</title>
-    <desc lang="en">Britains Barracuda bomber helped turn the tide of WWII but now, no single plane exists. Josh joins the search for wreckage above the Arctic Circle.</desc>
+  <programme start="20250406023000 +0800" stop="20250406032500 +0800" channel="39">
+    <title lang="en">Shortys Dream Shop S1</title>
+    <desc lang="en">A 1971 Cutlass is showing its age with styling best left in the 70s. Shorty and the team knock the urban cowboy out of the car and beef it up with muscle.</desc>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405225000 +0800" channel="39">
-    <title lang="en">The Last Woodsmen S1</title>
-    <desc lang="en">Jared Douglas and his crew harvest some of the most valuable trees on the planet. But</desc>
+  <programme start="20250406032500 +0800" stop="20250406042000 +0800" channel="39">
+    <title lang="en">Lakefront Bargain Hunt Renovation S2</title>
+    <desc lang="en">Two couples are combining budgets to find the holiday house of their dreams. They want water views and space for nine people to live comfortably.</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405234500 +0800" channel="39">
-    <title lang="en">The Curious Case Of... S1</title>
-    <desc lang="en">Therapist Jodi Hildebrandt embarks on a crusade against masturbation. An alliance with a mommy vlogger yields twisted beliefs and ravaged faith.</desc>
+  <programme start="20250406042000 +0800" stop="20250406051000 +0800" channel="39">
+    <title lang="en">Into The Jungle With Ed Stafford S1</title>
+    <desc lang="en">Explorer and former British Army captain Ed Stafford sets up an extreme survival school that will put struggling modern dads and their children.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405215500 +0800" channel="291">
-    <title lang="en">Expedition Unknown S9</title>
-    <desc lang="en">Britains Barracuda bomber helped turn the tide of WWII but now, no single plane exists. Josh joins the search for wreckage above the Arctic Circle.</desc>
+  <programme start="20250406023000 +0800" stop="20250406032500 +0800" channel="291">
+    <title lang="en">Shortys Dream Shop S1</title>
+    <desc lang="en">A 1971 Cutlass is showing its age with styling best left in the 70s. Shorty and the team knock the urban cowboy out of the car and beef it up with muscle.</desc>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405225000 +0800" channel="291">
-    <title lang="en">The Last Woodsmen S1</title>
-    <desc lang="en">Jared Douglas and his crew harvest some of the most valuable trees on the planet. But</desc>
+  <programme start="20250406032500 +0800" stop="20250406042000 +0800" channel="291">
+    <title lang="en">Lakefront Bargain Hunt Renovation S2</title>
+    <desc lang="en">Two couples are combining budgets to find the holiday house of their dreams. They want water views and space for nine people to live comfortably.</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405234500 +0800" channel="291">
-    <title lang="en">The Curious Case Of... S1</title>
-    <desc lang="en">Therapist Jodi Hildebrandt embarks on a crusade against masturbation. An alliance with a mommy vlogger yields twisted beliefs and ravaged faith.</desc>
+  <programme start="20250406042000 +0800" stop="20250406051000 +0800" channel="291">
+    <title lang="en">Into The Jungle With Ed Stafford S1</title>
+    <desc lang="en">Explorer and former British Army captain Ed Stafford sets up an extreme survival school that will put struggling modern dads and their children.</desc>
   </programme>
-  <programme start="20250405210500 +0800" stop="20250405213600 +0800" channel="219">
+  <programme start="20250406024800 +0800" stop="20250406030500 +0800" channel="219">
+    <title lang="en">News</title>
+    <desc lang="en">The leading news stories of the moment.</desc>
+  </programme>
+  <programme start="20250406030500 +0800" stop="20250406033600 +0800" channel="219">
     <title lang="en">Brussels, My Love ?</title>
     <desc lang="en">From economy to climate &amp; EUs role in world affairs, talk show about EU affairs &amp; impact on Europeans </desc>
   </programme>
-  <programme start="20250405213600 +0800" stop="20250405214500 +0800" channel="219">
+  <programme start="20250406033600 +0800" stop="20250406034600 +0800" channel="219">
     <title lang="en">Brussels, My Love ?</title>
     <desc lang="en">From economy to climate &amp; EUs role in world affairs, talk show about EU affairs &amp; impact on Europeans </desc>
   </programme>
-  <programme start="20250405214500 +0800" stop="20250405220500 +0800" channel="219">
-    <title lang="en">QATAR 365</title>
-    <desc lang="en">QATAR 365 will showcase Qatars actions and opportunities on the global stage.</desc>
+  <programme start="20250406034600 +0800" stop="20250406040500 +0800" channel="219">
+    <title lang="en">Brussels, My Love ?</title>
+    <desc lang="en">From economy to climate &amp; EUs role in world affairs, talk show about EU affairs &amp; impact on Europeans </desc>
   </programme>
-  <programme start="20250405220500 +0800" stop="20250405221800 +0800" channel="219">
+  <programme start="20250406040500 +0800" stop="20250406041800 +0800" channel="219">
     <title lang="en">News</title>
     <desc lang="en">The leading news stories of the moment.</desc>
   </programme>
-  <programme start="20250405221800 +0800" stop="20250405223900 +0800" channel="219">
+  <programme start="20250406041800 +0800" stop="20250406043900 +0800" channel="219">
     <title lang="en">News</title>
     <desc lang="en">The leading news stories of the moment.</desc>
   </programme>
-  <programme start="20250405223900 +0800" stop="20250405224800 +0800" channel="219">
-    <title lang="en">News</title>
-    <desc lang="en">The leading news stories of the moment.</desc>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="214">
+    <title lang="en">Mont Sainte Anne  Snowboard Cross</title>
   </programme>
-  <programme start="20250405224800 +0800" stop="20250405230500 +0800" channel="219">
-    <title lang="en">News</title>
-    <desc lang="en">The leading news stories of the moment.</desc>
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="214">
+    <title lang="en">Women Elite Crosscountry Short Track  Araxa</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405233000 +0800" channel="214">
-    <title lang="en">Gran Premio Miguel Indurain</title>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="249">
+    <title lang="en">Mont Sainte Anne  Snowboard Cross</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405233000 +0800" channel="249">
-    <title lang="en">Gran Premio Miguel Indurain</title>
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="249">
+    <title lang="en">Women Elite Crosscountry Short Track  Araxa</title>
   </programme>
-  <programme start="20250405205500 +0800" stop="20250405212000 +0800" channel="68">
-    <title lang="en">Ayeshas Home Kitchen S1</title>
-    <desc lang="en">Ayesha and her friends have a day off from the kids,so theyre making a decadent girls brunch together.They enjoy a light Bloody Mary topped with Brown Sugar Bacon.</desc>
+  <programme start="20250406030000 +0800" stop="20250406032500 +0800" channel="68">
+    <title lang="en">Smollett Eats S1</title>
+    <desc lang="en">Its all hands on deck when the Smolletts throw their epic annual barbecue under the stars for their family and friends.</desc>
   </programme>
-  <programme start="20250405212000 +0800" stop="20250405221000 +0800" channel="68">
-    <title lang="en">Best Bite In Town S1</title>
-    <desc lang="en">Noah Cappe and chefs Jet Tila and Tiffani Faison explore the food scene in Clarksville, Tennessee. There, they sample pizza, pasta, BBQ, and cheesecake.</desc>
+  <programme start="20250406032500 +0800" stop="20250406035000 +0800" channel="68">
+    <title lang="en">Smollett Eats S1</title>
+    <desc lang="en">Jurnee and Jazz decide to crash the action with their Southerninspired Oyster Po Boy Sliders, leading to a food truck showdown between Jake and his sisters.</desc>
   </programme>
-  <programme start="20250405221000 +0800" stop="20250405230000 +0800" channel="68">
-    <title lang="en">Restaurant Impossible S17</title>
-    <desc lang="en">Robert heads to Las Vegas to work his magic at A Pizza Melody. The owners husband has spent almost 1 million trying to make it a success, to no avail.</desc>
+  <programme start="20250406035000 +0800" stop="20250406044000 +0800" channel="68">
+    <title lang="en">Guys Ultimate Game Night S2</title>
+    <desc lang="en">Guy Fieri invites Kevin Smith, Jason Mewes, Kevin Frazier, Nischelle Turner and Kym Whitley to compete in ridiculous food games in the name of charity.</desc>
   </programme>
-  <programme start="20250405205500 +0800" stop="20250405212000 +0800" channel="245">
-    <title lang="en">Ayeshas Home Kitchen S1</title>
-    <desc lang="en">Ayesha and her friends have a day off from the kids,so theyre making a decadent girls brunch together.They enjoy a light Bloody Mary topped with Brown Sugar Bacon.</desc>
+  <programme start="20250406030000 +0800" stop="20250406032500 +0800" channel="245">
+    <title lang="en">Smollett Eats S1</title>
+    <desc lang="en">Its all hands on deck when the Smolletts throw their epic annual barbecue under the stars for their family and friends.</desc>
   </programme>
-  <programme start="20250405212000 +0800" stop="20250405221000 +0800" channel="245">
-    <title lang="en">Best Bite In Town S1</title>
-    <desc lang="en">Noah Cappe and chefs Jet Tila and Tiffani Faison explore the food scene in Clarksville, Tennessee. There, they sample pizza, pasta, BBQ, and cheesecake.</desc>
+  <programme start="20250406032500 +0800" stop="20250406035000 +0800" channel="245">
+    <title lang="en">Smollett Eats S1</title>
+    <desc lang="en">Jurnee and Jazz decide to crash the action with their Southerninspired Oyster Po Boy Sliders, leading to a food truck showdown between Jake and his sisters.</desc>
   </programme>
-  <programme start="20250405221000 +0800" stop="20250405230000 +0800" channel="245">
-    <title lang="en">Restaurant Impossible S17</title>
-    <desc lang="en">Robert heads to Las Vegas to work his magic at A Pizza Melody. The owners husband has spent almost 1 million trying to make it a success, to no avail.</desc>
+  <programme start="20250406035000 +0800" stop="20250406044000 +0800" channel="245">
+    <title lang="en">Guys Ultimate Game Night S2</title>
+    <desc lang="en">Guy Fieri invites Kevin Smith, Jason Mewes, Kevin Frazier, Nischelle Turner and Kym Whitley to compete in ridiculous food games in the name of charity.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405232000 +0800" channel="333">
-    <title lang="en">Minority Report</title>
-    <desc lang="en">In the future, criminals are caught before the crimes they commit, but one of the officers in the special unit is accused of one such crime and sets out to prove his innocence.</desc>
+  <programme start="20250406025000 +0800" stop="20250406034000 +0800" channel="333">
+    <title lang="en">Evolving Vegan</title>
+    <desc lang="en">A diverse group of chefs create mouthwatering plantbased dumplings, fried chikn sandwiches and Vietnamese catfish Mena forages for lobster mushrooms and visits the oldest tofu factory in America.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250406000500 +0800" channel="54">
-    <title lang="en">SMILE 2</title>
-    <desc lang="en">Global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events.</desc>
+  <programme start="20250406034000 +0800" stop="20250406043000 +0800" channel="333">
+    <title lang="en">Mystic Britain S2</title>
+    <desc lang="en">Clive Anderson and MaryAnn Ochota try to find out why an ancient warrior tribe mysteriously vanished  and uncover an epic tale of Vikings, giants, and the Loch Ness Monster.</desc>
   </programme>
-  <programme start="20250405220500 +0800" stop="20250405221000 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">The hilarious, heroic and mischievous Bugs Bunny you love is back! Follow Bugs in slapstick comedic shorts that find the iconic, carrotloving rabbit matching his wits against classic characters.</desc>
+  <programme start="20250406040000 +0800" stop="20250406053000 +0800" channel="54">
+    <title lang="en">STORKS</title>
+    <desc lang="en">This animated adventure delivers a fresh and funny look at the fable behind the stork legend.</desc>
   </programme>
-  <programme start="20250405221000 +0800" stop="20250405221500 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">When Old Man Montygrabs states his dear friend Bugs will inherit his mansion instead of his butler Leslie, he makes it his mission to destroy Bugs.</desc>
+  <programme start="20250406030500 +0800" stop="20250406034800 +0800" channel="102">
+    <title lang="en">THE LAZARUS PROJECT S1</title>
+    <desc lang="en">When George keeps reliving the same few weeks over and over, he is offered an opportunity that will change his life forever.</desc>
   </programme>
-  <programme start="20250405221500 +0800" stop="20250405222000 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">Foghorn teaches his chickens the art of karate until Taz shows up. Then he has his hands full with his new star pupil.</desc>
+  <programme start="20250406034800 +0800" stop="20250406043200 +0800" channel="102">
+    <title lang="en">THE LAZARUS PROJECT S1</title>
+    <desc lang="en">After a freak accident leaves George devastated, can he enlist The Lazarus Project to help him get back what he has lost?</desc>
   </programme>
-  <programme start="20250405222000 +0800" stop="20250405222500 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">Before his home lake is drained away, Daffy as to step in to put the kibosh on Elmer Fudds new artisinal mineral water bottling business.</desc>
+  <programme start="20250406030500 +0800" stop="20250406034800 +0800" channel="186">
+    <title lang="en">THE LAZARUS PROJECT S1</title>
+    <desc lang="en">When George keeps reliving the same few weeks over and over, he is offered an opportunity that will change his life forever.</desc>
   </programme>
-  <programme start="20250405222500 +0800" stop="20250405224000 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">When Daffy runs wild in a hospital, its up to Porky the orderly to get him to leaveBut Daffy has different plans.</desc>
+  <programme start="20250406034800 +0800" stop="20250406043200 +0800" channel="186">
+    <title lang="en">THE LAZARUS PROJECT S1</title>
+    <desc lang="en">After a freak accident leaves George devastated, can he enlist The Lazarus Project to help him get back what he has lost?</desc>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250405224500 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Sir Littlechin is trying to find, and capture, the rarely seen Giant. Its up to Bugs and Squeaks to protect the Giant from the nefarious Littlechin.</desc>
+  <programme start="20250406040000 +0800" stop="20250406053000 +0800" channel="168">
+    <title lang="en">STORKS</title>
+    <desc lang="en">This animated adventure delivers a fresh and funny look at the fable behind the stork legend.</desc>
   </programme>
-  <programme start="20250405224500 +0800" stop="20250405225000 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Daffy is determined to be the first creature to fly an airplane and his intrepid assistant Porky Pig is forced to help him while the dimwitted Wright Brothers make comments at every trail run and failure.</desc>
+  <programme start="20250406032000 +0800" stop="20250406051000 +0800" channel="100">
+    <title lang="en">ME BEFORE YOU</title>
+    <desc lang="en">A young countryside woman and an affluent banker paralyzed in a tragic accident couldnt have less in common, but in this heartbreakingly romance, they gain understanding, and ultimately love from one another.</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405225500 +0800" channel="102">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Bugs and Squeaks are on a walk in the park when Squeaks requests some lunch. He accidentally ties his hot dog to his balloon, and Bugs is left to fetch it.</desc>
+  <programme start="20250406032000 +0800" stop="20250406051000 +0800" channel="169">
+    <title lang="en">ME BEFORE YOU</title>
+    <desc lang="en">A young countryside woman and an affluent banker paralyzed in a tragic accident couldnt have less in common, but in this heartbreakingly romance, they gain understanding, and ultimately love from one another.</desc>
   </programme>
-  <programme start="20250405220500 +0800" stop="20250405221000 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">The hilarious, heroic and mischievous Bugs Bunny you love is back! Follow Bugs in slapstick comedic shorts that find the iconic, carrotloving rabbit matching his wits against classic characters.</desc>
+  <programme start="20250406035500 +0800" stop="20250406060000 +0800" channel="101">
+    <title lang="en">SILVER LININGS PLAYBOOK</title>
+    <desc lang="en">After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his exwife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.</desc>
   </programme>
-  <programme start="20250405221000 +0800" stop="20250405221500 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">When Old Man Montygrabs states his dear friend Bugs will inherit his mansion instead of his butler Leslie, he makes it his mission to destroy Bugs.</desc>
+  <programme start="20250406035500 +0800" stop="20250406060000 +0800" channel="185">
+    <title lang="en">SILVER LININGS PLAYBOOK</title>
+    <desc lang="en">After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his exwife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.</desc>
   </programme>
-  <programme start="20250405221500 +0800" stop="20250405222000 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">Foghorn teaches his chickens the art of karate until Taz shows up. Then he has his hands full with his new star pupil.</desc>
+  <programme start="20250406030000 +0800" stop="20250406035000 +0800" channel="88">
+    <title lang="en">Home Town S7</title>
   </programme>
-  <programme start="20250405222000 +0800" stop="20250405222500 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">Before his home lake is drained away, Daffy as to step in to put the kibosh on Elmer Fudds new artisinal mineral water bottling business.</desc>
+  <programme start="20250406035000 +0800" stop="20250406044000 +0800" channel="88">
+    <title lang="en">Fixer To Fabulous S3</title>
   </programme>
-  <programme start="20250405222500 +0800" stop="20250405224000 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S2</title>
-    <desc lang="en">When Daffy runs wild in a hospital, its up to Porky the orderly to get him to leaveBut Daffy has different plans.</desc>
+  <programme start="20250406030000 +0800" stop="20250406035000 +0800" channel="246">
+    <title lang="en">Home Town S7</title>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250405224500 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Sir Littlechin is trying to find, and capture, the rarely seen Giant. Its up to Bugs and Squeaks to protect the Giant from the nefarious Littlechin.</desc>
+  <programme start="20250406035000 +0800" stop="20250406044000 +0800" channel="246">
+    <title lang="en">Fixer To Fabulous S3</title>
   </programme>
-  <programme start="20250405224500 +0800" stop="20250405225000 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Daffy is determined to be the first creature to fly an airplane and his intrepid assistant Porky Pig is forced to help him while the dimwitted Wright Brothers make comments at every trail run and failure.</desc>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250405225500 +0800" channel="186">
-    <title lang="en">NEW LOONEY TUNES S3</title>
-    <desc lang="en">Bugs and Squeaks are on a walk in the park when Squeaks requests some lunch. He accidentally ties his hot dog to his balloon, and Bugs is left to fetch it.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250406000500 +0800" channel="168">
-    <title lang="en">SMILE 2</title>
-    <desc lang="en">Global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405231000 +0800" channel="101">
-    <title lang="en">THE LAST OF US S1</title>
-    <desc lang="en">When a stranger approaches his compound, survivalist Bill forges an unlikely connection. Later, Joel and Ellie seek Bills guidance.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405231000 +0800" channel="185">
-    <title lang="en">THE LAST OF US S1</title>
-    <desc lang="en">When a stranger approaches his compound, survivalist Bill forges an unlikely connection. Later, Joel and Ellie seek Bills guidance.</desc>
-  </programme>
-  <programme start="20250405211000 +0800" stop="20250405220000 +0800" channel="88">
-    <title lang="en">Rico To The Rescue S2</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405225000 +0800" channel="88">
-    <title lang="en">The Flipping El Moussas S2</title>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250405234000 +0800" channel="88">
-    <title lang="en">Windy City Rehab Alisons Dream Home S1</title>
-  </programme>
-  <programme start="20250405211000 +0800" stop="20250405220000 +0800" channel="246">
-    <title lang="en">Rico To The Rescue S2</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405225000 +0800" channel="246">
-    <title lang="en">The Flipping El Moussas S2</title>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250405234000 +0800" channel="246">
-    <title lang="en">Windy City Rehab Alisons Dream Home S1</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405215500 +0800" channel="67">
-    <title lang="en">Swamp People S14</title>
-    <desc lang="en">Ashley and Anna try to knock Troy off his throne in his own back yard. Daniels strategy falls to pieces. Leron and Porkchop call in reinforcements. Troy and Pickle risk their lives to hunt in Deadwood.</desc>
-  </programme>
-  <programme start="20250405215500 +0800" stop="20250405225000 +0800" channel="67">
-    <title lang="en">The Bermuda Triangle Into Cursed Waters S1</title>
-    <desc lang="en">The team signs up one of the most advanced research ships to search the depths for a lost secret weapon of the Pentagons arsenal  a topsecret spy plane that vanished in the Bermuda Triangle.</desc>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250405234500 +0800" channel="67">
+  <programme start="20250406023000 +0800" stop="20250406032500 +0800" channel="67">
     <title lang="en">Alone S10</title>
     <desc lang="en">The remaining participants continue to deal with the consequences of their actions. One survivalists food supply is threatened, while another reveals a secret that jeopardises their chances of winning.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405215500 +0800" channel="165">
-    <title lang="en">Swamp People S14</title>
-    <desc lang="en">Ashley and Anna try to knock Troy off his throne in his own back yard. Daniels strategy falls to pieces. Leron and Porkchop call in reinforcements. Troy and Pickle risk their lives to hunt in Deadwood.</desc>
+  <programme start="20250406032500 +0800" stop="20250406042000 +0800" channel="67">
+    <title lang="en">The MegaBrands That Built The World S1</title>
+    <desc lang="en">In the late 1800s Americans rarely bathed, lived in filthy conditions and deadly diseases were commonplace. But James Gamble and Harley Procter invent a revolutionary new soap that revolutionises America.</desc>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405225000 +0800" channel="165">
-    <title lang="en">The Bermuda Triangle Into Cursed Waters S1</title>
-    <desc lang="en">The team signs up one of the most advanced research ships to search the depths for a lost secret weapon of the Pentagons arsenal  a topsecret spy plane that vanished in the Bermuda Triangle.</desc>
+  <programme start="20250406042000 +0800" stop="20250406051500 +0800" channel="67">
+    <title lang="en">Ancient Aliens S16</title>
+    <desc lang="en">For more than four decades, awardwinning journalist Linda Moulton Howe has covered the most mysterious phenomena on Earth. Could her investigations lead us to a profound new reality?</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405234500 +0800" channel="165">
+  <programme start="20250406023000 +0800" stop="20250406032500 +0800" channel="165">
     <title lang="en">Alone S10</title>
     <desc lang="en">The remaining participants continue to deal with the consequences of their actions. One survivalists food supply is threatened, while another reveals a secret that jeopardises their chances of winning.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250406000000 +0800" channel="9">
-    <title lang="en">TABING ILOG</title>
+  <programme start="20250406032500 +0800" stop="20250406042000 +0800" channel="165">
+    <title lang="en">The MegaBrands That Built The World S1</title>
+    <desc lang="en">In the late 1800s Americans rarely bathed, lived in filthy conditions and deadly diseases were commonplace. But James Gamble and Harley Procter invent a revolutionary new soap that revolutionises America.</desc>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405223000 +0800" channel="8">
-    <title lang="en">MEGA BLOCKBUSTERS</title>
+  <programme start="20250406042000 +0800" stop="20250406051500 +0800" channel="165">
+    <title lang="en">Ancient Aliens S16</title>
+    <desc lang="en">For more than four decades, awardwinning journalist Linda Moulton Howe has covered the most mysterious phenomena on Earth. Could her investigations lead us to a profound new reality?</desc>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250406000000 +0800" channel="8">
-    <title lang="en">SUPER KAPAMILYA BLOCKBUSTERS</title>
+  <programme start="20250406040000 +0800" stop="20250406070000 +0800" channel="9">
+    <title lang="en">WE WILL SURVIVE</title>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405223000 +0800" channel="167">
-    <title lang="en">MEGA BLOCKBUSTERS</title>
+  <programme start="20250406040000 +0800" stop="20250406060000 +0800" channel="8">
+    <title lang="en">MOVIE CENTRAL PRESENTS 3</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250406000000 +0800" channel="167">
-    <title lang="en">SUPER KAPAMILYA BLOCKBUSTERS</title>
+  <programme start="20250406040000 +0800" stop="20250406060000 +0800" channel="167">
+    <title lang="en">MOVIE CENTRAL PRESENTS 3</title>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405223000 +0800" channel="75">
-    <title lang="en">KICKKICKKICKKICK</title>
-    <desc lang="en">An office comedy drama with star actor Ji Jinhee and producer Jo Youngsik building up a content production company aiming for 3 million subscribers.</desc>
+  <programme start="20250406024000 +0800" stop="20250406040500 +0800" channel="75">
+    <title lang="en">Music Bank</title>
+    <desc lang="en">The best tunes in Korea! the most sensational music show on TV satisfies all your senses! Fantastic performances and Aweinspiring harmony by the nations top musicians! Follow the latest trend in the Korean music scene through the Kchart, a summary of the weeks hottest songs.</desc>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405234500 +0800" channel="75">
-    <title lang="en">KICKKICKKICKKICK</title>
-    <desc lang="en">An office comedy drama with star actor Ji Jinhee and producer Jo Youngsik building up a content production company aiming for 3 million subscribers.</desc>
+  <programme start="20250406040500 +0800" stop="20250406050000 +0800" channel="75">
+    <title lang="en">DOCU INSIGHT</title>
+    <desc lang="en">DOCU INSIGHT is a unique program with no restrictions on materials and forms.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405225000 +0800" channel="63">
-    <title lang="en">Blind War</title>
-    <desc lang="en">Andy On, Yang Xing, Wang Han Yang, Waise Lee</desc>
+  <programme start="20250406023500 +0800" stop="20250406040500 +0800" channel="63">
+    <title lang="en">Iron Squad 2</title>
+    <desc lang="en">Kim Sung Joo, Jang Dong Min, Kim Hee Chul, Kim Dong Hyun, Ahn Yu Jin, Choi Young Jae</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250406004000 +0800" channel="63">
-    <title lang="en">Enter the Girl Dragon</title>
-    <desc lang="en">Pooja Bhalekar, Dragon Sek, Miya</desc>
+  <programme start="20250406040500 +0800" stop="20250406045500 +0800" channel="63">
+    <title lang="en">The Ultimate BROcation</title>
+    <desc lang="en">Billy Crawford, SonaOne, DJ PK, Bjorn Shen, Philip Ng</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405225000 +0800" channel="242">
-    <title lang="en">Blind War</title>
-    <desc lang="en">Andy On, Yang Xing, Wang Han Yang, Waise Lee</desc>
+  <programme start="20250406023500 +0800" stop="20250406040500 +0800" channel="242">
+    <title lang="en">Iron Squad 2</title>
+    <desc lang="en">Kim Sung Joo, Jang Dong Min, Kim Hee Chul, Kim Dong Hyun, Ahn Yu Jin, Choi Young Jae</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250406004000 +0800" channel="242">
-    <title lang="en">Enter the Girl Dragon</title>
-    <desc lang="en">Pooja Bhalekar, Dragon Sek, Miya</desc>
+  <programme start="20250406040500 +0800" stop="20250406045500 +0800" channel="242">
+    <title lang="en">The Ultimate BROcation</title>
+    <desc lang="en">Billy Crawford, SonaOne, DJ PK, Bjorn Shen, Philip Ng</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405212000 +0800" channel="5">
-    <title lang="en">Grade 2 Araling Palipunan</title>
-  </programme>
-  <programme start="20250405212000 +0800" stop="20250405214000 +0800" channel="5">
-    <title lang="en">Grade 3 Filipino</title>
-  </programme>
-  <programme start="20250405214000 +0800" stop="20250405220000 +0800" channel="5">
-    <title lang="en">Grade 3 Math</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405222000 +0800" channel="5">
-    <title lang="en">Grade 3 English</title>
-  </programme>
-  <programme start="20250405222000 +0800" stop="20250405224000 +0800" channel="5">
-    <title lang="en">Grade 3 Araling Panlipunan</title>
-  </programme>
-  <programme start="20250405224000 +0800" stop="20250406060000 +0800" channel="5">
-    <title lang="en">Grade 3 Science</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="65">
-    <title lang="en">MasterChef USA S13</title>
-    <desc lang="en">The chefs face their biggest challenge yet a 55foot wall. The chef with immunity is tasked with pairing contestants to cook on opposite sides of the wall, where they must rely on great communication.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405233500 +0800" channel="65">
+  <programme start="20250406024500 +0800" stop="20250406042500 +0800" channel="65">
     <title lang="en">Hider In My House</title>
     <desc lang="en">A young author buys the apartment of her dreams, but strange sounds begin to alarm her, along with a feeling of being watched. As she learns the history of the apartment, she uncovers a horrifying secret.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="199">
-    <title lang="en">MasterChef USA S13</title>
-    <desc lang="en">The chefs face their biggest challenge yet a 55foot wall. The chef with immunity is tasked with pairing contestants to cook on opposite sides of the wall, where they must rely on great communication.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405233500 +0800" channel="199">
+  <programme start="20250406024500 +0800" stop="20250406042500 +0800" channel="199">
     <title lang="en">Hider In My House</title>
     <desc lang="en">A young author buys the apartment of her dreams, but strange sounds begin to alarm her, along with a feeling of being watched. As she learns the history of the apartment, she uncovers a horrifying secret.</desc>
   </programme>
-  <programme start="20250405205500 +0800" stop="20250405215000 +0800" channel="334">
+  <programme start="20250406031500 +0800" stop="20250406041000 +0800" channel="334">
     <title lang="en">Beasts of the Big Blue 1</title>
     <desc lang="en">Take a deep dive into the teeming waters of the Hauraki Gulf, near Auckland, New Zealand, and explore a true paradise for ocean creatures. Catch a glimpse of a stealthy manta ray, enjoy dolphin antics, and admire a kaleidoscope of tropical fish.</desc>
   </programme>
-  <programme start="20250405215000 +0800" stop="20250405224500 +0800" channel="334">
+  <programme start="20250406041000 +0800" stop="20250406050500 +0800" channel="334">
     <title lang="en">Beasts of the Big Blue 1</title>
     <desc lang="en">Delve into the strange magic of the Three Kings Islands, a remote archipelago north of New Zealand. Swim with a pod of bottlenose dolphins, join shorttailed stingrays on a hunt, and feel the tension as a gang of predatory orcas arrives on the scene.</desc>
   </programme>
-  <programme start="20250405224500 +0800" stop="20250405234000 +0800" channel="334">
-    <title lang="en">Beasts of the Big Blue 1</title>
-    <desc lang="en">Travel to the Cook Islands, the destination of choice for 3,000 humpback whales ready to mate and raise their young. Witness giant clams and green turtles thriving in the islands massive coral reef and get a glimpse into our evolutionary past.</desc>
-  </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="288">
-    <title lang="en">MY GREATEST DISHES</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="288">
-    <title lang="en">FISH FOREVER</title>
-  </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="288">
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="288">
     <title lang="en">EUROMAXX</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="287">
-    <title lang="en">MY GREATEST DISHES</title>
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="288">
+    <title lang="en">CASA DAZA</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="287">
-    <title lang="en">FISH FOREVER</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="288">
+    <title lang="en">STORIES FROM THE NATIONAL GALLERY</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="287">
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="287">
     <title lang="en">EUROMAXX</title>
   </programme>
-  <programme start="20250405222900 +0800" stop="20250405224500 +0800" channel="252">
-    <title lang="en">InterMezzo</title>
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="287">
+    <title lang="en">CASA DAZA</title>
   </programme>
-  <programme start="20250405224500 +0800" stop="20250406020000 +0800" channel="252">
-    <title lang="en">Lully Atys  Opra de Versailles</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="287">
+    <title lang="en">STORIES FROM THE NATIONAL GALLERY</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250406010000 +0800" channel="321">
-    <title lang="en">Saturday Night Party!</title>
-    <desc lang="en">Saturday night, we feel the air is getting hot... Like you baby!  Theres only one way to keep the party going  stick with MTV 90s, weve got all the best songs right here!</desc>
+  <programme start="20250406040000 +0800" stop="20250406052300 +0800" channel="252">
+    <title lang="en">Berliner Philharmoniker, Kirill Petrenko Europakonzert</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="190">
-    <title lang="en">MTV Rewind 2013</title>
-    <desc lang="en">Step into the MTV Time Machine and travel back to 2013 to check out what tracks were stealing our hearts and ruling the charts!</desc>
+  <programme start="20250406030000 +0800" stop="20250406034500 +0800" channel="190">
+    <title lang="en">MTV Unplugged Paul McCartney</title>
+    <desc lang="en">MTV Unplugged, world premiered this one hour performance with the legendary Paul McCartney. Taped on January 25, 1991 at the Limehouse Studios in London.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="23">
-    <title lang="en">TIME TO DANCE</title>
+  <programme start="20250406034500 +0800" stop="20250406043000 +0800" channel="190">
+    <title lang="en">MTV Unplugged Duran Duran</title>
+    <desc lang="en">MTVs acclaimed acoustic music series showcases the work of todays top artist and introduces the stars of tomorrow.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="23">
-    <title lang="en">MYX PRESS PLAY</title>
+  <programme start="20250406023000 +0800" stop="20250406030000 +0800" channel="23">
+    <title lang="en">MYX HITS DIFFERENT</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405211000 +0800" channel="222">
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="23">
+    <title lang="en">THE RIPPLE</title>
+  </programme>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="23">
+    <title lang="en">THE OPM HOUR</title>
+  </programme>
+  <programme start="20250406030000 +0800" stop="20250406031000 +0800" channel="222">
     <title lang="en">NHK NEWSLINE</title>
     <desc lang="en">NHK NEWSLINE brings you up to date with the latest from Japan, Asia and around the world. Our team covers breaking news and major developments, with trusted anchors to tie it all together.</desc>
   </programme>
-  <programme start="20250405211000 +0800" stop="20250405220000 +0800" channel="222">
+  <programme start="20250406031000 +0800" stop="20250406040000 +0800" channel="222">
     <title lang="en">The Perfect 2Hour Guide Kyoto</title>
     <desc lang="en">Take a journey through Kyotos historic Kiyomizudera Temple, from its iconic stage and tranquil sacred spring. We unveil the definitive twohour condensed course, while basking in springtime beauty.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405221000 +0800" channel="222">
+  <programme start="20250406040000 +0800" stop="20250406041000 +0800" channel="222">
     <title lang="en">NHK NEWSLINE</title>
     <desc lang="en">NHK NEWSLINE brings you up to date with the latest from Japan, Asia and around the world. Our team covers breaking news and major developments, with trusted anchors to tie it all together.</desc>
   </programme>
-  <programme start="20250405221000 +0800" stop="20250405224000 +0800" channel="222">
+  <programme start="20250406041000 +0800" stop="20250406044000 +0800" channel="222">
     <title lang="en">BIZ STREAM</title>
     <desc lang="en">This episode features business models designed to help Japans hikikomori individuals who have withdrawn from society to socialize, learn, and even find employment.</desc>
   </programme>
-  <programme start="20250405224000 +0800" stop="20250405225000 +0800" channel="222">
-    <title lang="en">u&amp;i</title>
-    <desc lang="en">This show for kids promotes a greater understanding for people with difficulties and helps develop empathy. With the help of two fairies, the main character thinks about what can be done to help.</desc>
+  <programme start="20250406023000 +0800" stop="20250406024000 +0800" channel="103">
+    <title lang="en">PAW Patrol</title>
+    <desc lang="en">Zuma is on a wacky water rescue after Cornelius the pig goes for a ride on a windsurfing board.</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405230000 +0800" channel="222">
-    <title lang="en">Texico</title>
-    <desc lang="en">Learn the principles of programming without a computer. Animated characters provide fun and lucid explanations of 5 core processes analysis, combination, generalization, abstraction, and simulation.</desc>
+  <programme start="20250406024000 +0800" stop="20250406030500 +0800" channel="103">
+    <title lang="en">Rubble &amp; Crew</title>
+    <desc lang="en">When Rubbles favorite baseball star Aaron Judge cant get out of town to the home run derby, Rubble &amp; Crew build a stadium to hold the derby right in Builder Cove!  Surfs up for Rubble &amp; Crew! Well, if they can get over the super hot sand, it is.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405212500 +0800" channel="103">
+  <programme start="20250406030500 +0800" stop="20250406033000 +0800" channel="103">
+    <title lang="en">Rubble &amp; Crew</title>
+    <desc lang="en">When Speed Meister builds his own station for reusing trash, the pups have to clean up the mess all over Builder Cove.  After a baby duckling follows them home, Rubble &amp; Crew use their construction knowhow to bring the duckling back to its home.</desc>
+  </programme>
+  <programme start="20250406033000 +0800" stop="20250406035000 +0800" channel="103">
     <title lang="en">DORA</title>
-    <desc lang="en">Isas throwing a party where everyone will be dancing the Rainforest Ritmo. Boots has to learn the dance before they get there!  Dora leads everyone into the Tricky Trappy Forest to recover Ticos magic nut that can turn into your favorite food.</desc>
+    <desc lang="en">The Queen of Reptiles is visiting Isa, but the gardens a mess! Dora helps her get everything ready in time for La Reinas visit.  Dora meets Sammy the Sloth, who needs to get to Day Camp on time so he can show everyone a special surprise.</desc>
   </programme>
-  <programme start="20250405212500 +0800" stop="20250405214500 +0800" channel="103">
-    <title lang="en">Blaze and the Monster Machines</title>
-    <desc lang="en">When Space Commander Megan is marooned on Pluto, our robot heroes will race through wormholes, shoot past ice volcanoes, and blast straight through an asteroid field to bring their new friend back home.</desc>
-  </programme>
-  <programme start="20250405214500 +0800" stop="20250405220500 +0800" channel="103">
-    <title lang="en">The Tiny Chef Show</title>
-    <desc lang="en">Chef and Olly make French onion dip, but Chef cant stop crying from the onions!  When the Queen Bee comes to a Stump tea party, Chefs determined to put on a party fit for a queen.</desc>
-  </programme>
-  <programme start="20250405220500 +0800" stop="20250405221500 +0800" channel="103">
-    <title lang="en">Sharkdog</title>
-    <desc lang="en">When Sharkdog accidentally eats the aquariums newest exhibit, Max and the Sharkpack must come up with a plan before Mr. Ceviche, the aquariums owner, catches on.</desc>
-  </programme>
-  <programme start="20250405221500 +0800" stop="20250405222000 +0800" channel="103">
-    <title lang="en">Sharkdog</title>
-    <desc lang="en">Max is determined to win this years obstacle course race, but that may be difficult with Sharkdog always trying to help.</desc>
-  </programme>
-  <programme start="20250405222000 +0800" stop="20250405223000 +0800" channel="103">
-    <title lang="en">Sharkdog</title>
-    <desc lang="en">Sharkdog is very excited to be in the annual Fisher family photo, but disaster after disaster threatens his perfect picture.</desc>
-  </programme>
-  <programme start="20250405223000 +0800" stop="20250405225000 +0800" channel="103">
+  <programme start="20250406035000 +0800" stop="20250406041000 +0800" channel="103">
     <title lang="en">Baby Sharks Big Show!</title>
-    <desc lang="en">The fate of the citys squidapple supply lies in Babys fins when he accidentally assumes the role of Mayor on a big day.  The Sharks go on the family game show Sink or Swim and find theyre in hot water with their competition, the Fishes.</desc>
+    <desc lang="en">Jealous of Baby Sharks popularity, Shadow rebrands the Wreck as his own personal amusement park.  When Baby Shark and friends are playing knights and royals, Vola wants to be more than just a princess.</desc>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405230000 +0800" channel="103">
-    <title lang="en">Baby Sharks Big Show!</title>
-    <desc lang="en">Baby and William look after a baby reef rabbit and learn how difficult it is to be a parent.</desc>
+  <programme start="20250406041000 +0800" stop="20250406042000 +0800" channel="103">
+    <title lang="en">Sharkdog</title>
+    <desc lang="en">Sharkdog wants to perform in the talent show with Max, but all Max wants to do is chill. Will Sharkdog perform with one of Maxs friends instead?</desc>
   </programme>
-  <programme start="20250405210500 +0800" stop="20250405213000 +0800" channel="45">
+  <programme start="20250406042000 +0800" stop="20250406042500 +0800" channel="103">
+    <title lang="en">Sharkdog</title>
+    <desc lang="en">The Sharkpack are excited to watch the meteor shower on Foggy Springss highest mountain, and Sharkdog knows the best way to get there. The only problem? Captain Quigley thinks she does too.</desc>
+  </programme>
+  <programme start="20250406023500 +0800" stop="20250406025500 +0800" channel="45">
     <title lang="en">SpongeBob SquarePants</title>
-    <desc lang="en">Two familiar faces from SpongeBobs past visit Bikini Bottom, but they bring a big problem along with them.  After falling down the drain, Plankton finds an unlikely ally in the sewers.</desc>
+    <desc lang="en">When his pet amoeba Spot has puppies, Plankton decides to use them in another of his nefarious plots.  Mr. Krabs is too scared to get his physical, but if he doesnt pass, the Krusty Krab will be shut down!</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405215500 +0800" channel="45">
+  <programme start="20250406025500 +0800" stop="20250406032000 +0800" channel="45">
+    <title lang="en">The Smurfs</title>
+    <desc lang="en">An accident in Papa Smurfs lab causes him to switch bodies with a sparrow.  Painters greatest painting has been stolen and all the Smurfs are looking for it.</desc>
+  </programme>
+  <programme start="20250406032000 +0800" stop="20250406034500 +0800" channel="45">
+    <title lang="en">The Smurfs</title>
+    <desc lang="en">When nobody wants to listen to Harmonys dreadful music, Papa Smurf gives him a potion to charm his audience.  Smurfette and her class of SmurfFu students mistake Baby as their SmurfFu guru.</desc>
+  </programme>
+  <programme start="20250406034500 +0800" stop="20250406040500 +0800" channel="45">
     <title lang="en">SpongeBob SquarePants</title>
-    <desc lang="en">Mrs. Puffs new substitute teacher gives SpongeBob a crash course in driving.  Mr. Krabs and Plankton must work together after discovering a well of miraclegrease under their restaurants.</desc>
+    <desc lang="en">SpongeBob builds a pool in his backyard and Squidward tries to resist taking a dip.  Mr. Krabs must reckon with the Goobfather after he adds Patty Whips to the menu at the Krusty Krab.</desc>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405221500 +0800" channel="45">
+  <programme start="20250406040500 +0800" stop="20250406043000 +0800" channel="45">
     <title lang="en">SpongeBob SquarePants</title>
-    <desc lang="en">Karen tells the fairytale of a nerd trying to steal an action figure from his three little neighbors.  Squidward hosts a secret We Hate SpongeBob Club at his house.</desc>
+    <desc lang="en">Squidward gets left with a mess when SpongeBob and Patrick use carrier clams to send messages to each other.  After cooking his kazillionth Krabby Patty, SpongeBob believes hes developed an allergy to them.</desc>
   </programme>
-  <programme start="20250405221500 +0800" stop="20250405223000 +0800" channel="45">
-    <title lang="en">The Casagrandes</title>
-    <desc lang="en">Tired of not having a space of his own, Bobby secretly moves into a vacant apartment unit in the building. Feat. Lori Loud</desc>
+  <programme start="20250406024000 +0800" stop="20250406050500 +0800" channel="104">
+    <title lang="en">The Core</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405225000 +0800" channel="45">
-    <title lang="en">The Casagrandes</title>
-    <desc lang="en">When Fridas fun dad comes to visit, Hector tries to win back his grandchildrens attention.  Ronnie Anne and Lincoln are set for a big day of pranks and newbie Sid wants to join in on the fun too!</desc>
+  <programme start="20250406024000 +0800" stop="20250406050500 +0800" channel="209">
+    <title lang="en">The Core</title>
   </programme>
-  <programme start="20250405225000 +0800" stop="20250405231500 +0800" channel="45">
-    <title lang="en">The Casagrandes</title>
-    <desc lang="en">After a zoo fundraiser goes wrong, Sid must save the day with her family!</desc>
+  <programme start="20250406030500 +0800" stop="20250406044500 +0800" channel="53">
+    <title lang="en">Made Of Honor</title>
+    <desc lang="en">A guy in love with an engaged woman tries to win her over after she asks him to be her maid of honor.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405223000 +0800" channel="309">
-    <title lang="en">NBTC NATIONAL FINALS DIVI1 GAME 29</title>
+  <programme start="20250406030500 +0800" stop="20250406044500 +0800" channel="196">
+    <title lang="en">Made Of Honor</title>
+    <desc lang="en">A guy in love with an engaged woman tries to win her over after she asks him to be her maid of honor.</desc>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250406003000 +0800" channel="309">
-    <title lang="en">NBTC NATIONAL FINALS DIVI1 GAME 30</title>
+  <programme start="20250406030000 +0800" stop="20250406050000 +0800" channel="70">
+    <title lang="en">2024 V LEAGUE COLLEGIATE CHALLENGE</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250406000000 +0800" channel="326">
-    <title lang="en">Asian Tour International Series Macau Day 1</title>
+  <programme start="20250406040000 +0800" stop="20250406060000 +0800" channel="16">
+    <title lang="en">Minuscule</title>
   </programme>
-  <programme start="20250405205500 +0800" stop="20250405225000 +0800" channel="104">
-    <title lang="en">Teenage Mutant Ninja Turtles Out Of The Shadows</title>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250406004500 +0800" channel="104">
-    <title lang="en">Pacific Rim Uprising</title>
-  </programme>
-  <programme start="20250405205500 +0800" stop="20250405225000 +0800" channel="209">
-    <title lang="en">Teenage Mutant Ninja Turtles Out Of The Shadows</title>
-  </programme>
-  <programme start="20250405225000 +0800" stop="20250406004500 +0800" channel="209">
-    <title lang="en">Pacific Rim Uprising</title>
-  </programme>
-  <programme start="20250405221500 +0800" stop="20250405235000 +0800" channel="53">
-    <title lang="en">One Last Thing</title>
-    <desc lang="en">Dylan Derringer, a lonely dentist in Florida, is confronted by a figure from the past bringing news that sends him on an eventful and ultimately lifealtering journey of discovery.</desc>
-  </programme>
-  <programme start="20250405221500 +0800" stop="20250405235000 +0800" channel="196">
-    <title lang="en">One Last Thing</title>
-    <desc lang="en">Dylan Derringer, a lonely dentist in Florida, is confronted by a figure from the past bringing news that sends him on an eventful and ultimately lifealtering journey of discovery.</desc>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="363">
-    <title lang="en">BATAS ET AL</title>
-  </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="363">
-    <title lang="en">MEDTALK</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250406000000 +0800" channel="16">
-    <title lang="en">The Girl With A dragon Tattoo</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405212000 +0800" channel="31">
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="31">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405212000 +0800" stop="20250405215000 +0800" channel="31">
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="31">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405215000 +0800" stop="20250406000000 +0800" channel="31">
-    <title lang="en">ROSHN Saudi League 202425 Matchday 26</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="32">
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="31">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405223000 +0800" channel="32">
-    <title lang="en">WorldSBK 2025 Rd2 Portuguese Round</title>
+  <programme start="20250406040000 +0800" stop="20250406063000 +0800" channel="32">
+    <title lang="en">MLB 2025 Regular season</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="32">
-    <title lang="en">202425 ALeague Men Match Weekly</title>
+  <programme start="20250406040000 +0800" stop="20250406063000 +0800" channel="254">
+    <title lang="en">MLB 2025 Regular season</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="254">
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="253">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405223000 +0800" channel="254">
-    <title lang="en">WorldSBK 2025 Rd2 Portuguese Round</title>
-  </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="254">
-    <title lang="en">202425 ALeague Men Match Weekly</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405212000 +0800" channel="253">
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="253">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405212000 +0800" stop="20250405215000 +0800" channel="253">
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="253">
     <title lang="en">ALeague Men 202425 Mini Match</title>
   </programme>
-  <programme start="20250405215000 +0800" stop="20250406000000 +0800" channel="253">
-    <title lang="en">ROSHN Saudi League 202425 Matchday 26</title>
-  </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="325">
-    <title lang="en">Hawaii Five O S1</title>
-  </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="325">
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="325">
     <title lang="en">Suits S7</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405225500 +0800" channel="55">
-    <title lang="en">MVP</title>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="325">
+    <title lang="en">NCIS LA S2</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405225500 +0800" channel="170">
-    <title lang="en">MVP</title>
+  <programme start="20250406023000 +0800" stop="20250406044000 +0800" channel="55">
+    <title lang="en">The Professor and The Madman</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405213000 +0800" channel="324">
-    <title lang="en">Brooklyn NineNine S4</title>
+  <programme start="20250406023000 +0800" stop="20250406044000 +0800" channel="170">
+    <title lang="en">The Professor and The Madman</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405220000 +0800" channel="324">
+  <programme start="20250406023000 +0800" stop="20250406030000 +0800" channel="324">
     <title lang="en">Parks And Recreation S4</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405223000 +0800" channel="324">
+  <programme start="20250406030000 +0800" stop="20250406033000 +0800" channel="324">
     <title lang="en">Hot Ones S14</title>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405230000 +0800" channel="324">
+  <programme start="20250406033000 +0800" stop="20250406040000 +0800" channel="324">
     <title lang="en">Superstore S4</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405223500 +0800" channel="107">
-    <title lang="en">In Cycle</title>
-    <desc lang="en">A seemingly happy couple who loves diving come to a deserted island for a diving vacation, which is part of the husbands plan to murder his wife. His conspiracy however, is intervened by a series of bizarre events on the island. Can the couple eventually escape from the enigmatic ocean?</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="324">
+    <title lang="en">Top Chef All Stars LA S17</title>
   </programme>
-  <programme start="20250405223500 +0800" stop="20250405235500 +0800" channel="107">
-    <title lang="en">Bad Blood</title>
-    <desc lang="en">A social worker takes a withdrawn homeless boy into her care, not suspecting that he is a vampire. As she gets closer to him, his thirst for human blood increases and to protect him, she must help lure his next kill to satisfy his cravings.</desc>
+  <programme start="20250406022500 +0800" stop="20250406034500 +0800" channel="107">
+    <title lang="en">Zombie Island</title>
+    <desc lang="en">Jeff, a big fan of zombies, goes to a deserted and mysterious island with his friends hoping to seek out exciting adventures. What started as an adventure turns out to be a horrifying journey as they get trapped on the island and are attacked by the zombies! Their lives are in danger when they fail to fight back, and the game has only just begun!</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405212500 +0800" channel="62">
-    <title lang="en">Selena  Restaurant S1</title>
+  <programme start="20250406034500 +0800" stop="20250406050000 +0800" channel="107">
+    <title lang="en">Night at the Eagle Inn</title>
+    <desc lang="en">A pair of fraternal twins spend a terrifying night in a remote inn to investigate the last known whereabouts of their father who mysteriously disappeared the night they were born. As they dive deeper, the propertys dark secrets ensnare them in a hellish labyrinth which they must escape before dawn.</desc>
   </programme>
-  <programme start="20250405212500 +0800" stop="20250405215500 +0800" channel="62">
-    <title lang="en">Selena  Restaurant S1</title>
+  <programme start="20250406023000 +0800" stop="20250406035000 +0800" channel="62">
+    <title lang="en">Candy Land S1</title>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405234500 +0800" channel="62">
-    <title lang="en">90 Day Fiance Happily Ever After? S7</title>
+  <programme start="20250406035000 +0800" stop="20250406042000 +0800" channel="62">
+    <title lang="en">Unique Sweets S6</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405212500 +0800" channel="290">
-    <title lang="en">Selena  Restaurant S1</title>
+  <programme start="20250406042000 +0800" stop="20250406044500 +0800" channel="62">
+    <title lang="en">Girl Meets Farm S10</title>
   </programme>
-  <programme start="20250405212500 +0800" stop="20250405215500 +0800" channel="290">
-    <title lang="en">Selena  Restaurant S1</title>
+  <programme start="20250406023000 +0800" stop="20250406035000 +0800" channel="290">
+    <title lang="en">Candy Land S1</title>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405234500 +0800" channel="290">
-    <title lang="en">90 Day Fiance Happily Ever After? S7</title>
+  <programme start="20250406035000 +0800" stop="20250406042000 +0800" channel="290">
+    <title lang="en">Unique Sweets S6</title>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405215500 +0800" channel="82">
-    <title lang="en">Border Control Spain S2</title>
-    <desc lang="en">Follows the interventions of the Security and Customs Services at the borders of Spain who are under the constant threat from drugs, weapons, and suspected terrorists.</desc>
+  <programme start="20250406042000 +0800" stop="20250406044500 +0800" channel="290">
+    <title lang="en">Girl Meets Farm S10</title>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405222000 +0800" channel="82">
-    <title lang="en">Border Control Spain S2</title>
-    <desc lang="en">Follows the interventions of the Security and Customs Services at the borders of Spain who are under the constant threat from drugs, weapons, and suspected terrorists.</desc>
+  <programme start="20250406022400 +0800" stop="20250406031200 +0800" channel="82">
+    <title lang="en">Salvage Hunters S6</title>
+    <desc lang="en">Drew Pritchard travels in search of weird and wonderful objects  the bigger the hoard of forgotten antiques and dusty furniture, the happier Drew is!</desc>
   </programme>
-  <programme start="20250405222000 +0800" stop="20250405231000 +0800" channel="82">
-    <title lang="en">The Alaska Triangle S1</title>
-    <desc lang="en">A cryptozoologist investigates reports of a sea monster lurking beneath the icy waters of Alaska.</desc>
+  <programme start="20250406031200 +0800" stop="20250406040000 +0800" channel="82">
+    <title lang="en">Booze Traveler S4</title>
+    <desc lang="en">Jack wants to see how the rugged Rocky Mountains became a worldclass playground.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405215500 +0800" channel="201">
-    <title lang="en">Border Control Spain S2</title>
-    <desc lang="en">Follows the interventions of the Security and Customs Services at the borders of Spain who are under the constant threat from drugs, weapons, and suspected terrorists.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="82">
+    <title lang="en">Hotel Impossible Top Ten Off Camera Confidential</title>
+    <desc lang="en">Anthony counts down the ten best moments in Hotel Impossible history that were unexpectedly caught on camera.</desc>
   </programme>
-  <programme start="20250405215500 +0800" stop="20250405222000 +0800" channel="201">
-    <title lang="en">Border Control Spain S2</title>
-    <desc lang="en">Follows the interventions of the Security and Customs Services at the borders of Spain who are under the constant threat from drugs, weapons, and suspected terrorists.</desc>
+  <programme start="20250406022400 +0800" stop="20250406031200 +0800" channel="201">
+    <title lang="en">Salvage Hunters S6</title>
+    <desc lang="en">Drew Pritchard travels in search of weird and wonderful objects  the bigger the hoard of forgotten antiques and dusty furniture, the happier Drew is!</desc>
   </programme>
-  <programme start="20250405222000 +0800" stop="20250405231000 +0800" channel="201">
-    <title lang="en">The Alaska Triangle S1</title>
-    <desc lang="en">A cryptozoologist investigates reports of a sea monster lurking beneath the icy waters of Alaska.</desc>
+  <programme start="20250406031200 +0800" stop="20250406040000 +0800" channel="201">
+    <title lang="en">Booze Traveler S4</title>
+    <desc lang="en">Jack wants to see how the rugged Rocky Mountains became a worldclass playground.</desc>
   </programme>
-  <programme start="20250405205100 +0800" stop="20250405230600 +0800" channel="134">
-    <title lang="en">LE CLUB DES INVINCIBLES</title>
-    <desc lang="en">Bruno, MarieChristine, Sandrine and Romain, four of the greatest TV game show champions, form the Club des invincibles Invincibles Club. Facing television personalities on questions about general knowledge, they are going to try to maintain their winning streak to collect as much money as possible for the associations they represent.</desc>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="201">
+    <title lang="en">Hotel Impossible Top Ten Off Camera Confidential</title>
+    <desc lang="en">Anthony counts down the ten best moments in Hotel Impossible history that were unexpectedly caught on camera.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405233000 +0800" channel="10">
-    <title lang="en">CINE CINCO HIT NA HIT TBC</title>
+  <programme start="20250406024000 +0800" stop="20250406030000 +0800" channel="134">
+    <title lang="en">YA PAS DE PLANTE B</title>
+    <desc lang="en">Desalinating seawater, towing icebergs, recycling wastewater, using chemicals on the clouds or building megareservoirs. Which of these five solutions to possible water shortages in 2050 are credible? Answers from the hydrologist Emma Haziza.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="144">
-    <title lang="en">TVBS Sisys World New</title>
+  <programme start="20250406030000 +0800" stop="20250406040500 +0800" channel="134">
+    <title lang="en">FOOTBALL  LIGUE 1 MCDONALDS</title>
+    <desc lang="en">A match from the French football championship.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="144">
-    <title lang="en">TVBS Sisys World News Europe</title>
+  <programme start="20250406040500 +0800" stop="20250406050400 +0800" channel="134">
+    <title lang="en">FOOTBALL  LIGUE 1 MCDONALDS</title>
+    <desc lang="en">A match from the French football championship.</desc>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405220000 +0800" channel="304">
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="144">
+    <title lang="en">TVBS Insight People</title>
+  </programme>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="144">
+    <title lang="en">Chop Chop Show</title>
+  </programme>
+  <programme start="20250406030000 +0800" stop="20250406040000 +0800" channel="304">
+    <title lang="en">LATE NIGHT VISION</title>
+  </programme>
+  <programme start="20250406040000 +0800" stop="20250406050000 +0800" channel="304">
     <title lang="en">2100 HOT TOPICS</title>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405230000 +0800" channel="304">
-    <title lang="en">NEWS NIGHT</title>
+  <programme start="20250406022500 +0800" stop="20250406040500 +0800" channel="78">
+    <title lang="en">Undisputed II Last Man Standing</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405231000 +0800" channel="78">
-    <title lang="en">The Delta Force</title>
+  <programme start="20250406040500 +0800" stop="20250406060000 +0800" channel="78">
+    <title lang="en">My Soul To Take</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405231000 +0800" channel="180">
-    <title lang="en">The Delta Force</title>
+  <programme start="20250406022500 +0800" stop="20250406040500 +0800" channel="180">
+    <title lang="en">Undisputed II Last Man Standing</title>
   </programme>
-  <programme start="20250405210000 +0800" stop="20250405211500 +0800" channel="297">
-    <title lang="en">Counting With Paula S3</title>
-    <desc lang="en">Counting with Paula is a fun and educational series about numbers for children.</desc>
+  <programme start="20250406040500 +0800" stop="20250406060000 +0800" channel="180">
+    <title lang="en">My Soul To Take</title>
   </programme>
-  <programme start="20250405211500 +0800" stop="20250405213000 +0800" channel="297">
-    <title lang="en">Counting With Paula S3</title>
-    <desc lang="en">Counting with Paula is a fun and educational series about numbers for children.</desc>
+  <programme start="20250406023000 +0800" stop="20250406024500 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405213000 +0800" stop="20250405214500 +0800" channel="297">
-    <title lang="en">Counting With Paula S3</title>
-    <desc lang="en">Counting with Paula is a fun and educational series about numbers for children.</desc>
+  <programme start="20250406024500 +0800" stop="20250406030000 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405214500 +0800" stop="20250405220000 +0800" channel="297">
-    <title lang="en">Counting With Paula S3</title>
-    <desc lang="en">Counting with Paula is a fun and educational series about numbers for children.</desc>
+  <programme start="20250406030000 +0800" stop="20250406031500 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405220000 +0800" stop="20250405221500 +0800" channel="297">
-    <title lang="en">Leo The Wildlife Ranger</title>
-    <desc lang="en">The Junior Rangers return a crab eating macaque to the wild.</desc>
+  <programme start="20250406031500 +0800" stop="20250406033000 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405221500 +0800" stop="20250405223000 +0800" channel="297">
-    <title lang="en">Leo The Wildlife Ranger</title>
-    <desc lang="en">The Junior Rangers take a baby smooth coated otter home to the rainforest.</desc>
+  <programme start="20250406033000 +0800" stop="20250406034500 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405223000 +0800" stop="20250405224500 +0800" channel="297">
-    <title lang="en">Leo The Wildlife Ranger</title>
-    <desc lang="en">The Junior Rangers travel to the Indonesian island of Sumatra to search for a baby orangutans mother.</desc>
+  <programme start="20250406034500 +0800" stop="20250406040000 +0800" channel="297">
+    <title lang="en">Jelly Jamm S2</title>
+    <desc lang="en">Jelly Jamm celebrates music, fun and friendship.</desc>
   </programme>
-  <programme start="20250405224500 +0800" stop="20250405230000 +0800" channel="297">
-    <title lang="en">Leo The Wildlife Ranger</title>
-    <desc lang="en">The Junior Rangers make a trip to the jungle to reunite a shy pangolin with its mother.</desc>
+  <programme start="20250406040000 +0800" stop="20250406043000 +0800" channel="297">
+    <title lang="en">Splash And Bubbles</title>
+    <desc lang="en">The Reeftown friends arrive at the Arctic and meet a narwhal  The kids find Melody just in time to see her at the krill bloom.</desc>
   </programme>
 </tv>
