@@ -89,10 +89,14 @@ def generate_epg():
     epg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output', 'individual', 'clickthecity.xml')
     print(f"Writing EPG data to {epg_path}...")
 
-    with open(epg_path, "w", encoding="utf-8") as xml_file:
-        xml_file.write(xml_str)
+    try:
+        with open(epg_path, "w", encoding="utf-8") as xml_file:
+            xml_file.write(xml_str)
+        print(f"EPG data successfully written to {epg_path}")
+    except Exception as e:
+        print(f"Error writing EPG data to {epg_path}: {e}")
 
-    print("EPG generation completed and written to output/individual/clickthecity.xml!")
+    print("EPG generation completed!")
 
 if __name__ == "__main__":
     generate_epg()
