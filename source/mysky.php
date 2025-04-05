@@ -92,19 +92,19 @@ function generate_mysky_epg() {
         $xml .= "</channel>\n";
     }
 
-    $now = new DateTime('now', new DateTimeZone('Asia/Manila'));
+    $now_manila = new DateTime('now', new DateTimeZone('Asia/Manila'));
     // We will only fetch for the current hour and the next
-    $dates = [$now];
+    $dates = [$now_manila];
 
     foreach ($channels as $channel) {
         echo "Fetching schedule for MySky channel: " . htmlspecialchars($channel['name']) . " (ID: " . htmlspecialchars($channel['site_id']) . ")...\n";
         foreach ($dates as $date) {
             $schedule = fetch_mysky_schedule($channel['site_id'], $date);
             if (!empty($schedule)) {
-                $two_hours_later = (clone $now)->modify('+2 hours');
+                $two_hours_later = (clone $now_manila)->modify('+2 hours');
                 foreach ($schedule as $program) {
                     $program_start = DateTime::createFromFormat('YmdHis O', $program['start']);
-                    if ($program_start >= $now && $program_start < $two_hours_later) {
+                    if ($program_start >= $now_manila && $program_start < $two_hours_later) {
                         $xml .= "<programme start=\"" . htmlspecialchars($program['start']) . "\" stop=\"" . htmlspecialchars($program['stop']) . "\" channel=\"" . htmlspecialchars($channel['site_id']) . "\">\n";
                         $xml .= "<title lang=\"" . htmlspecialchars($channel['lang']) . "\">" . htmlspecialchars($program['title']) . "</title>\n";
                         if (!empty($program['description'])) {
@@ -121,7 +121,7 @@ function generate_mysky_epg() {
 
     $xml .= "</tv>\n";
 
-    $epg_path = __DIR__ . '/../output/individual/mysky.xml'; // Simplified filename
+    $epg_path = __DIR__ . '/../output/mysky.xml'; // Output directly to the root /output folder
     echo "Writing MySky EPG data to " . htmlspecialchars($epg_path) . "...\n";
 
     $dom = new DOMDocument();
