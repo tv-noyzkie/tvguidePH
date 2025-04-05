@@ -76,7 +76,7 @@ function generate_xmltv($channels_data, $all_epg_data) {
 
     $xml .= "</tv>\n";
 
-    $epg_path = __DIR__ . '/../output/individual/blast.xml'; // Modified path
+    $epg_path = __DIR__ . '/../output/blast.xml'; // Modified output path to root /output
     $result = file_put_contents($epg_path, $xml);
     if ($result === false) {
         echo "Error: Failed to write Blast EPG data to " . htmlspecialchars($epg_path) . "\n";
