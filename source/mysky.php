@@ -117,7 +117,7 @@ function generate_mysky_epg() {
 
     $xml .= "</tv>\n";
 
-    $epg_path = 'output/individual/mysky_' . date('YmdHis') . '_2hr.xml'; // Include timestamp for more frequent runs
+    $epg_path = __DIR__ . '/../output/individual/mysky_' . date('Ymd') . '_2hr.xml'; // Timestamp removed and path corrected
     echo "Writing MySky EPG data to " . htmlspecialchars($epg_path) . "...\n";
 
     $dom = new DOMDocument();
