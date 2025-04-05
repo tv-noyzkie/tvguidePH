@@ -1,9 +1,12 @@
-name: Generate MySky EPG (Every 2 Hours)
+name: Generate MySky EPG
+
+permissions:
+  contents: write # Grant write permission to the repository contents
 
 on:
   schedule:
     - cron: '0 */2 * * *' # Runs every 2 hours at the top of the hour (UTC)
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering from the GitHub UI
 
 jobs:
   generate:
@@ -19,16 +22,16 @@ jobs:
           extensions: dom, curl, json
 
       - name: Ensure Output Directory Exists
-        run: mkdir -p output/individual
+        run: mkdir -p output
 
       - name: Execute MySky EPG Generation Script
         run: php source/mysky.php
 
       - name: Check MySky Output File
-        run: ls -l output/individual/mysky.xml || echo "MySky file not found"
+        run: ls -l output/mysky.xml || echo "MySky file not found"
 
       - name: Commit and Push MySky Changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Automated MySky EPG data generation (every 2 hours)"
-          file_pattern: output/individual/mysky.xml
+          file_pattern: output/mysky.xml
