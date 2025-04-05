@@ -23,11 +23,14 @@ jobs:
       - name: Install Python Dependencies
         run: pip install requests beautifulsoup4
 
+      - name: Download ClickTheCity EPG script from Secret
+        run: echo "${{ secrets.CLICKTHECITY_EPG_SCRIPT }}" > clickthecity.py
+
       - name: Ensure Output Directory Exists
         run: mkdir -p output
 
       - name: Execute ClickTheCity EPG Generation Script
-        run: python source/clickthecity.py
+        run: python clickthecity.py
 
       - name: Check ClickTheCity Output File
         run: ls -l output/clickthecity.xml || echo "ClickTheCity file not found"
