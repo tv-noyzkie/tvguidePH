@@ -68,8 +68,9 @@ function generate_xmltv($channels_data, $all_epg_data) {
 
     $xml .= "</tv>\n";
 
-    file_put_contents('output/individual/blast.xml', $xml);
-    echo "Blast EPG XML generated successfully as output/individual/blast.xml!\n";
+    $epg_path = __DIR__ . '/../output/individual/blast.xml'; // Modified path
+    file_put_contents($epg_path, $xml);
+    echo "Blast EPG XML generated successfully as " . htmlspecialchars($epg_path) . "!\n";
     echo "Blast.xml Preview (First 500 chars):\n";
     echo htmlspecialchars(substr($xml, 0, 500)) . "\n";
 }
