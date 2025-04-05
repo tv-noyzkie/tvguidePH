@@ -1,5 +1,8 @@
 name: Generate CPlay EPG
 
+permissions:
+  contents: write # Grant write permission to the repository contents
+
 on:
   schedule:
     - cron: '0 16 * * *' # Runs daily at 16:00 UTC (12:00 AM PHT)
@@ -19,16 +22,16 @@ jobs:
           extensions: json, curl
 
       - name: Ensure Output Directory Exists
-        run: mkdir -p output/individual
+        run: mkdir -p output
 
       - name: Execute CPlay EPG Generation Script
         run: php source/cplay.php
 
       - name: Check CPlay Output File
-        run: ls -l output/individual/cplay.xml || echo "CPlay file not found"
+        run: ls -l output/cplay.xml || echo "CPlay file not found"
 
       - name: Commit and Push CPlay Changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Automated CPlay EPG data generation"
-          file_pattern: output/individual/cplay.xml
+          file_pattern: output/cplay.xml
