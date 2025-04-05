@@ -30,6 +30,9 @@ jobs:
       - name: Check MySky Output File
         run: ls -l output/mysky.xml || echo "MySky file not found"
 
+      - name: Add MySky XML to Git
+        run: git add output/mysky.xml
+
       - name: Pull latest changes
         run: git pull origin main --rebase
 
