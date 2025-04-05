@@ -1,20 +1,67 @@
 <?php
 require_once 'utils.php';
 
+function get_cplay_schedule_data() {
+    $epg_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d') . 'T00:00:00Z&end=' . date('Y-m-d') . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph';
+    $channel_info_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content?ids=%s&info=detail&mode=detail&st=published&reg=ph&dt=web&client=pldt-cignal-web&pageNumber=1&pageSize=100';
+
+    echo "Fetching Cignal Play EPG data from: " . $epg_url . "\n";
+    $epg_content = get_content($epg_url);
+    if ($epg_content === false) {
+        echo "Failed to fetch Cignal Play EPG data.\n";
+        return false;
+    }
+    echo "Cignal Play EPG data fetched successfully. Content length: " . strlen($epg_content) . " bytes.\n";
+    $epg_raw = json_decode($epg_content, true);
+    echo "Cignal Play EPG JSON decode result: ";
+    print_r($epg_raw);
+
+    if (!isset($epg_raw['data']) || !is_array($epg_raw['data'])) {
+        echo "Failed to parse Cignal Play EPG data.\n";
+        return false;
+    }
+
+    $channel_ids = implode(',', array_column($epg_raw['data'], 'cid'));
+    $full_channel_info_url = sprintf($channel_info_url, $channel_ids);
+    echo "Fetching Cignal Play channel info from: " . $full_channel_info_url . "\n";
+    $channel_info_content = get_content($full_channel_info_url);
+    if ($channel_info_content === false) {
+        echo "Failed to fetch Cignal Play channel info.\n";
+        return false;
+    }
+    echo "Cignal Play channel info fetched successfully. Content length: " . strlen($channel_info_content) . " bytes.\n";
+    $channel_info_raw = json_decode($channel_info_content, true);
+    echo "Cignal Play channel info JSON decode result: ";
+    print_r($channel_info_raw);
+
+    if (!isset($channel_info_raw['data']) || !is_array($channel_info_raw['data'])) {
+        echo "Failed to parse Cignal Play channel info.\n";
+        return false;
+    }
+
+    $channel_info = [];
+    foreach ($channel_info_raw['data'] as $channel) {
+        $channel_info[$channel['id']] = $channel;
+    }
+
+    return ['epg' => $epg_raw['data'], 'info' => $channel_info];
+}
+
 function generate_cplay_epg() {
     echo "Generating CPlay EPG...\n";
-    $epg_raw = json_decode(get_content('https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d') . 'T00:00:00Z&end=' . date('Y-m-d') . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph'), true);
-    $channel_info_raw = json_decode(get_content('https://live-data-store-cdn.api.pldt.firstlight.ai/content?ids=' . implode(',', array_column($epg_raw['data'], 'cid')) . '&info=detail&mode=detail&st=published&reg=ph&dt=web&client=pldt-cignal-web&pageNumber=1&pageSize=100'), true);
-    $channel_info = [];
-    if (isset($channel_info_raw['data'])) {
-        foreach ($channel_info_raw['data'] as $channel) {
-            $channel_info[$channel['id']] = $channel;
-        }
+    $schedule_data = get_cplay_schedule_data();
+
+    if (!$schedule_data) {
+        echo "Failed to retrieve Cignal Play schedule data. Exiting.\n";
+        return;
     }
+
+    $epg_data = $schedule_data['epg'];
+    $channel_info = $schedule_data['info'];
 
     // Prepare channel data with display names for sorting
     $channels_with_names = [];
-    foreach ($epg_raw['data'] as $channel_data) {
+    foreach ($epg_data as $channel_data) {
         if (isset($channel_info[$channel_data['cid']])) {
             $channels_with_names[] = [
                 'cid' => $channel_data['cid'],
