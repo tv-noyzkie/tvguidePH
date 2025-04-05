@@ -1,15 +1,7 @@
 <?php
+require_once 'utils.php';
 
 date_default_timezone_set('Asia/Manila'); // Set Philippine Timezone
-
-function get_content($url) {
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $output = curl_exec($ch);
-    curl_close($ch);
-    return $output;
-}
 
 function fetch_mysky_channels() {
     $url = 'https://skyepg.mysky.com.ph/Main/getEventsbyType';
