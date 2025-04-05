@@ -54,8 +54,9 @@ foreach ($channels_with_names as $channel_item) {
 
 $xml .= "</tv>\n";
 
-file_put_contents('output/individual/cplay.xml', $xml);
-echo "CPlay EPG generated and saved to output/individual/cplay.xml\n";
+$epg_path = __DIR__ . '/../output/individual/cplay.xml'; // Modified path
+file_put_contents($epg_path, $xml);
+echo "CPlay EPG generated and saved to " . htmlspecialchars($epg_path) . "\n";
 
 function convert_date_time_format($date_time) {
     $date = new DateTime($date_time);
