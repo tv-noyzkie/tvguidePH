@@ -2,6 +2,7 @@
 require_once 'utils.php';
 
 define('BASE_URL', 'https://epg.tapdmv.com/calendar');
+define('FETCH_DAYS', 2); // Fetch EPG data for this many days
 
 // Fetch channel list
 function get_channels() {
@@ -20,28 +21,35 @@ function get_channels() {
             return strcmp(strtolower($a['display_name']), strtolower($b['display_name']));
         });
         return $channels;
+    } else {
+        echo "Error fetching or parsing channel list.\n";
+        return [];
     }
-    return [];
 }
 
-// Fetch EPG data for a channel
-function get_epg($channel_id, $date) {
+// Fetch EPG data for a channel for a specific date
+function get_epg_for_date($channel_id, $date) {
     $start_date = $date->format('Y-m-d');
     $end_date = $date->modify('+1 day')->format('Y-m-d');
     $date->modify('-1 day'); // Reset the date object
     $url = BASE_URL . '/' . $channel_id . '?$limit=10000&$sort[createdAt]=-1&start=' . $start_date . '&end=' . $end_date;
     $response = get_content($url);
+    if ($response === false) {
+        echo "Error fetching EPG data for channel ID: " . htmlspecialchars($channel_id) . " on " . $start_date . "\n";
+        return null;
+    }
     return json_decode($response, true);
 }
 
 // Convert EPG data to XMLTV format
 function generate_xmltv($channels_data, $all_epg_data) {
     $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-    $xml .= "<tv>\n";
+    $xml .= "<tv generator-info-name=\"tvguidePH - Blast\" generator-info-url=\"\">\n";
 
     foreach ($channels_data as $channel) {
         $xml .= "<channel id=\"" . htmlspecialchars($channel['id']) . "\">\n";
         $xml .= "<display-name>" . htmlspecialchars($channel['display_name']) . "</display-name>\n";
+        // Add optional elements like icon and url if available in the API
         $xml .= "</channel>\n";
     }
 
@@ -59,9 +67,9 @@ function generate_xmltv($channels_data, $all_epg_data) {
             $start_time = str_replace([':', '-'], '', $program['start']);
             $stop_time = str_replace([':', '-'], '', $program['stop']);
             $xml .= "<programme start=\"" . htmlspecialchars(rtrim($start_time, '+0000')) . " UTC\" stop=\"" . htmlspecialchars(rtrim($stop_time, '+0000')) . " UTC\" channel=\"" . htmlspecialchars($program['channel']) . "\">\n";
-            $xml .= "<title>" . htmlspecialchars(trim($program['title'])) . "</title>\n";
-            $xml .= "<desc>" . htmlspecialchars($program['description'] ?: 'No description') . "</desc>\n";
-            $xml .= "<category>" . htmlspecialchars($program['category'] ?: 'Uncategorized') . "</category>\n";
+            $xml .= "<title lang=\"en\">" . htmlspecialchars(trim($program['title'])) . "</title>\n";
+            $xml .= "<desc lang=\"en\">" . htmlspecialchars($program['description'] ?: 'No description') . "</desc>\n";
+            $xml .= "<category lang=\"en\">" . htmlspecialchars($program['category'] ?: 'Uncategorized') . "</category>\n";
             $xml .= "</programme>\n";
         }
     }
@@ -72,7 +80,7 @@ function generate_xmltv($channels_data, $all_epg_data) {
     $result = file_put_contents($epg_path, $xml);
     if ($result === false) {
         echo "Error: Failed to write Blast EPG data to " . htmlspecialchars($epg_path) . "\n";
-        // Optionally, log more details about the error
+        // Optionally, log more details about the error: error_get_last()
     } else {
         echo "Blast EPG XML generated successfully as " . htmlspecialchars($epg_path) . " (" . $result . " bytes)!\n";
         echo "Blast.xml Preview (First 500 chars):\n";
@@ -94,25 +102,32 @@ if (!empty($channels)) {
 }
 
 $all_epg = [];
-foreach ($channels as $channel) {
-    $epg_data = get_epg($channel['id'], clone $current_date_utc); // Clone to avoid modifying the original date object
-    if (isset($epg_data) && is_array($epg_data)) {
-        echo "EPG fetched for channel: " . htmlspecialchars($channel['name']) . "\n";
-        foreach ($epg_data as $item) {
-            $all_epg[] = [
-                'channel' => $channel['id'],
-                'title' => $item['program'],
-                'description' => isset($item['description']) ? $item['description'] : 'No description',
-                'category' => isset($item['genre']) ? $item['genre'] : 'Uncategorized',
-                'start' => $item['startTime'],
-                'stop' => $item['endTime']
-            ];
+for ($i = 0; $i < FETCH_DAYS; $i++) {
+    $fetch_date = clone $current_date_utc;
+    $fetch_date->modify("+$i day");
+    $formatted_date = $fetch_date->format('Y-m-d');
+    echo "Fetching EPG data for: " . $formatted_date . " UTC\n";
+    foreach ($channels as $channel) {
+        $epg_data = get_epg_for_date($channel['id'], clone $fetch_date);
+        if (isset($epg_data) && is_array($epg_data)) {
+            echo "EPG fetched for channel: " . htmlspecialchars($channel['name']) . " (" . $formatted_date . ")\n";
+            foreach ($epg_data as $item) {
+                $all_epg[] = [
+                    'channel' => $channel['id'],
+                    'title' => $item['program'],
+                    'description' => isset($item['description']) ? $item['description'] : 'No description',
+                    'category' => isset($item['genre']) ? $item['genre'] : 'Uncategorized',
+                    'start' => $item['startTime'],
+                    'stop' => $item['endTime']
+                ];
+            }
+        } else {
+            echo "No EPG data or fetch error for channel: " . htmlspecialchars($channel['name']) . " (" . $formatted_date . ")\n";
         }
-    } else {
-        echo "No EPG data for channel: " . htmlspecialchars($channel['name']) . "\n";
     }
 }
 
+echo "Total Fetched Programs: " . count($all_epg) . "\n";
 echo "Fetched Programs (First 5):\n";
 print_r(array_slice($all_epg, 0, 5));
 echo "\n";
