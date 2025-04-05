@@ -30,14 +30,11 @@ jobs:
       - name: Check MySky Output File
         run: ls -l output/mysky.xml || echo "MySky file not found"
 
-      - name: Add MySky XML to Git
-        run: git add output/mysky.xml
-
-      - name: Pull latest changes
-        run: git pull origin main --rebase
-
       - name: Commit and Push MySky Changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Automated MySky EPG data generation (every 2 hours)"
           file_pattern: output/mysky.xml
+
+      - name: Pull latest changes
+        run: git pull origin main --rebase
