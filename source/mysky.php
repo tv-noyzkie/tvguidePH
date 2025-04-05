@@ -83,11 +83,12 @@ function generate_mysky_epg() {
     echo "Fetched " . count($channels) . " MySky channels successfully!\n";
 
     $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-    $xml .= "<tv>\n";
+    $xml .= "<tv generator-info-name=\"tvguidePH - MySky\" generator-info-url=\"\">\n";
 
     foreach ($channels as $channel) {
         $xml .= "<channel id=\"" . htmlspecialchars($channel['site_id']) . "\">\n";
         $xml .= "<display-name lang=\"" . htmlspecialchars($channel['lang']) . "\">" . htmlspecialchars($channel['name']) . "</display-name>\n";
+        // You might be able to fetch channel icons from the API response in the future
         $xml .= "</channel>\n";
     }
 
@@ -136,5 +137,4 @@ function generate_mysky_epg() {
 
 // Run the EPG generation
 generate_mysky_epg();
-
 ?>
