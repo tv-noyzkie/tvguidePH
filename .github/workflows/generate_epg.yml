@@ -31,7 +31,19 @@ jobs:
       - name: Execute EPG Generation Script
         run: php generate_epg.php
 
-      - name: List Generated Files
+      - name: Check Files After MySky
+        run: ls -l output/individual/mysky_*.xml || echo "MySky file not found"
+
+      - name: Check Files After CPlay
+        run: ls -l output/individual/cplay.xml || echo "CPlay file not found"
+
+      - name: Check Files After Blast
+        run: ls -l output/individual/blast.xml || echo "Blast file not found"
+
+      - name: Check Files After ClickTheCity
+        run: ls -l output/individual/clickthecity.xml || echo "ClickTheCity file not found"
+
+      - name: List Generated Files (Final Check)
         run: ls -R output/individual/
 
       - name: Commit and Push Changes (if any)
