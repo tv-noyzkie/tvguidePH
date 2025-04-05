@@ -28,7 +28,7 @@ usort($channels_with_names, function ($a, $b) {
 });
 
 $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-$xml .= "<tv date=\"" . date('Ymd') . "\" generator-info-name=\"AdoboTV\">\n";
+$xml .= "<tv date=\"" . date('Ymd') . "\" generator-info-name=\"tvguidePH\">\n";
 
 // Output channels
 foreach ($channels_with_names as $channel_item) {
