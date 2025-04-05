@@ -1,5 +1,8 @@
 name: Generate Blast EPG (Daily - Output Root)
 
+permissions:
+  contents: write # Grant write permission to the repository contents
+
 on:
   schedule:
     - cron: '0 16 * * *' # Runs daily at 16:00 UTC (12:00 AM PHT)
