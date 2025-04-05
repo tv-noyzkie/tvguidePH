@@ -1,66 +1,65 @@
 <?php
-$epg_raw = json_decode(file_get_contents('https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d') . 'T00:00:00Z&end=' . date('Y-m-d') . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph'), true);
-$channel_info_raw = json_decode(file_get_contents('https://live-data-store-cdn.api.pldt.firstlight.ai/content?ids=' . implode(',', array_column($epg_raw['data'], 'cid')) . '&info=detail&mode=detail&st=published&reg=ph&dt=web&client=pldt-cignal-web&pageNumber=1&pageSize=100'), true);
-$channel_info = [];
-if (isset($channel_info_raw['data'])) {
-    foreach ($channel_info_raw['data'] as $channel) {
-        $channel_info[$channel['id']] = $channel;
+require_once 'utils.php';
+
+function get_cplay_schedule() {
+    $url = 'https://www.cignalplay.com/epg';
+    echo "Fetching Cignal Play schedule from: " . $url . "\n"; // Added log
+    $content = get_content($url);
+    if ($content === false) {
+        echo "Failed to fetch Cignal Play schedule.\n";
+        return false;
     }
+    echo "Cignal Play schedule fetched successfully. Content length: " . strlen($content) . " bytes.\n"; // Added log
+    $decoded_content = json_decode($content, true);
+    echo "JSON decode result: ";
+    print_r($decoded_content); // Added log
+    return $decoded_content;
 }
 
-// Prepare channel data with display names for sorting
-$channels_with_names = [];
-foreach ($epg_raw['data'] as $channel_data) {
-    if (isset($channel_info[$channel_data['cid']])) {
-        $channels_with_names[] = [
-            'cid' => $channel_data['cid'],
-            'cs' => $channel_data['cs'],
-            'display_name' => $channel_info[$channel_data['cid']]['lon'][0]['n'] ?? '',
-            'data' => $channel_data,
-            'info' => $channel_info[$channel_data['cid']]
-        ];
+function generate_cplay_epg() {
+    echo "Generating CPlay EPG...\n";
+    $schedule_data = get_cplay_schedule();
+
+    if (!$schedule_data || !isset($schedule_data['channels'])) {
+        echo "Failed to parse Cignal Play schedule data.\n";
+        var_dump($schedule_data); // Added log
+        return;
     }
-}
 
-// Sort channels alphabetically by display name
-usort($channels_with_names, function ($a, $b) {
-    return strcmp(strtolower($a['display_name']), strtolower($b['display_name']));
-});
+    $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+    $xml .= "<tv>\n";
 
-$xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-$xml .= "<tv date=\"" . date('Ymd') . "\" generator-info-name=\"tvguidePH\">\n";
+    foreach ($schedule_data['channels'] as $channel) {
+        $channel_id = 'cplay_' . $channel['channel_id'];
+        $xml .= "<channel id=\"" . htmlspecialchars($channel_id) . "\">\n";
+        $xml .= "<display-name>" . htmlspecialchars($channel['channel_name']) . "</display-name>\n";
+        $xml .= "</channel>\n";
 
-// Output channels
-foreach ($channels_with_names as $channel_item) {
-    $xml .= "<channel id=\"" . htmlspecialchars($channel_item['cs']) . "\">\n";
-    $xml .= "<display-name>". htmlspecialchars($channel_item['display_name']) . "</display-name>\n";
-    $xml .= "<icon src=\"https://qp-pldt-image-resizer-cloud-prod.akamaized.net/image/" . htmlspecialchars($channel_item['info']['id']) . "/" . htmlspecialchars($channel_item['info']['ia'][0] ?? '') . ".jpg?height=150\" />\n";
-    $xml .= "<url>https://cignalplay.com</url>\n";
-    $xml .= "</channel>\n";
-}
+        if (isset($channel['programs']) && is_array($channel['programs'])) {
+            foreach ($channel['programs'] as $program) {
+                $start_time = DateTime::createFromFormat('Y-m-d H:i:s', $program['start_time']);
+                $end_time = DateTime::createFromFormat('Y-m-d H:i:s', $program['end_time']);
 
-// Output programmes following the sorted channel order
-foreach ($channels_with_names as $channel_item) {
-    foreach ($channel_item['data']['airing'] as $programme) {
-        $xml .= "<programme start=\"" . convert_date_time_format($programme['sc_st_dt']) . "\" stop=\"" . convert_date_time_format($programme['sc_ed_dt']) . "\" channel=\"" . htmlspecialchars($channel_item['cs']) . "\">\n";
-        $xml .= "<title lang=\"en\">" . htmlspecialchars($programme['pgm']['lon'][0]['n'] ?? '') . "</title>\n";
-        $xml .= "<desc lang=\"en\">" . htmlspecialchars($programme['pgm']['lod'][0]['n'] ?? '') . "</desc>\n";
-        if (isset($channel_item['info']['log'][0]['n'][0])) {
-            $xml .= "<category lang=\"en\">" . htmlspecialchars($channel_item['info']['log'][0]['n'][0]) . "</category>\n";
+                if ($start_time && $end_time) {
+                    $xml .= "<programme start=\"" . htmlspecialchars($start_time->format('YmdHis O')) . "\" stop=\"" . htmlspecialchars($end_time->format('YmdHis O')) . "\" channel=\"" . htmlspecialchars($channel_id) . "\">\n";
+                    $xml .= "<title>" . htmlspecialchars($program['title']) . "</title>\n";
+                    if (isset($program['description'])) {
+                        $xml .= "<desc>" . htmlspecialchars($program['description']) . "</desc>\n";
+                    }
+                    $xml .= "</programme>\n";
+                }
+            }
         }
-        $xml .= "</programme>\n";
     }
+
+    $xml .= "</tv>\n";
+
+    $epg_path = __DIR__ . '/../output/individual/cplay.xml'; // Modified path
+    file_put_contents($epg_path, $xml);
+    echo "CPlay EPG generated and saved to " . htmlspecialchars($epg_path) . "\n";
 }
 
-$xml .= "</tv>\n";
+// Run the EPG generation
+generate_cplay_epg();
 
-$epg_path = __DIR__ . '/../output/individual/cplay.xml'; // Modified path
-file_put_contents($epg_path, $xml);
-echo "CPlay EPG generated and saved to " . htmlspecialchars($epg_path) . "\n";
-
-function convert_date_time_format($date_time) {
-    $date = new DateTime($date_time);
-    return $date->format('YmdHis O');
-}
-//end cplay.php
 ?>
