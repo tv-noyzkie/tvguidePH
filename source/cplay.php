@@ -86,7 +86,7 @@ function generate_cplay_epg() {
     $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
     $manila_timezone = new DateTimeZone('Asia/Manila');
     $now_manila = new DateTime('now', $manila_timezone);
-    $xml .= "<tv date=\"" . $now_manila->format('Ymd') . "\" generator-info-name=\"tvguidePH\">\n";
+    $xml .= "<tv date=\"" . $now_manila->format('Ymd') . "\" generator-info-name=\"tvguidePH - CPlay\">\n";
 
     // Output channels
     foreach ($channels_with_names as $channel_item) {
@@ -114,7 +114,7 @@ function generate_cplay_epg() {
 
     $xml .= "</tv>\n";
 
-    $epg_path = __DIR__ . '/../output/individual/cplay.xml'; // Corrected output path
+    $epg_path = __DIR__ . '/../output/cplay.xml'; // Output directly to the root /output folder
     $result = file_put_contents($epg_path, $xml);
     if ($result === false) {
         echo "Error: Failed to write CPlay EPG data to " . htmlspecialchars($epg_path) . "\n";
