@@ -2,7 +2,7 @@
 require_once 'utils.php';
 
 function get_cplay_schedule_data() {
-    $epg_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d') . 'T00:00:00Z&end=' . date('Y-m-d') . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph';
+    $epg_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=' . date('Y-m-d', strtotime('now in Asia/Manila')) . 'T00:00:00Z&end=' . date('Y-m-d', strtotime('now in Asia/Manila')) . 'T23:59:59Z&dt=all&client=pldt-cignal-web&reg=ph';
     $channel_info_url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content?ids=%s&info=detail&mode=detail&st=published&reg=ph&dt=web&client=pldt-cignal-web&pageNumber=1&pageSize=100';
 
     echo "Fetching Cignal Play EPG data from: " . $epg_url . "\n";
@@ -79,7 +79,7 @@ function generate_cplay_epg() {
     });
 
     $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-    $xml .= "<tv date=\"" . date('Ymd') . "\" generator-info-name=\"tvguidePH\">\n";
+    $xml .= "<tv date=\"" . date('Ymd', strtotime('now in Asia/Manila')) . "\" generator-info-name=\"tvguidePH\">\n";
 
     // Output channels
     foreach ($channels_with_names as $channel_item) {
@@ -106,8 +106,13 @@ function generate_cplay_epg() {
     $xml .= "</tv>\n";
 
     $epg_path = __DIR__ . '/../output/individual/cplay.xml'; // Corrected output path
-    file_put_contents($epg_path, $xml);
-    echo "CPlay EPG generated and saved to " . htmlspecialchars($epg_path) . "\n";
+    $result = file_put_contents($epg_path, $xml);
+    if ($result === false) {
+        echo "Error: Failed to write CPlay EPG data to " . htmlspecialchars($epg_path) . "\n";
+        // Optionally, log more details about the error
+    } else {
+        echo "CPlay EPG generated and saved to " . htmlspecialchars($epg_path) . " (" . $result . " bytes)\n";
+    }
 }
 
 function convert_date_time_format($date_time) {
