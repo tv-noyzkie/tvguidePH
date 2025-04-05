@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 16 * * *' # Runs daily at 16:00 UTC (12:00 AM PHT)
+    - cron: '0 16 * * *' # Runs daily at 12:00 AM PHT (adjusted for Manila time)
   workflow_dispatch: # Allows manual triggering from the GitHub UI
 
 jobs:
@@ -24,7 +24,10 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Download ClickTheCity EPG script from Secret
-        run: echo "${{ secrets.CLICKTHECITY_EPG_SCRIPT }}" > clickthecity.py
+        run: |
+          cat <<EOF > clickthecity.py
+          ${{ secrets.CLICKTHECITY_EPG_SCRIPT }}
+          EOF
 
       - name: Ensure Output Directory Exists
         run: mkdir -p output
