@@ -1,11 +1,11 @@
 name: Generate Blast EPG (Daily - Output Root)
 
 permissions:
-  contents: write # Grant write permission to the repository contents
+  contents: write
 
 on:
   schedule:
-    - cron: '0 16 * * *' # Runs daily at 16:00 UTC (12:00 AM PHT)
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Check Blast Output File
         run: ls -l output/blast.xml || echo "Blast file not found"
+
+      - name: Pull latest changes
+        run: git pull origin main --rebase
 
       - name: Commit and Push Blast Changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v4
