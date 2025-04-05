@@ -1,12 +1,12 @@
 name: Generate MySky EPG
 
 permissions:
-  contents: write # Grant write permission to the repository contents
+  contents: write
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Runs every 2 hours at the top of the hour (UTC)
-  workflow_dispatch: # Allows manual triggering from the GitHub UI
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Check MySky Output File
         run: ls -l output/mysky.xml || echo "MySky file not found"
+
+      - name: Pull latest changes
+        run: git pull origin main --rebase
 
       - name: Commit and Push MySky Changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v4
