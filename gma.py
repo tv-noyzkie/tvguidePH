@@ -56,23 +56,23 @@ def parse_schedule(html):
     schedules = {}
 
     # Find the schedule listings.  This should contain both GMA and GTV
-    schedule_container = soup.find('div', class_='tv-schedule-container')
+    schedule_container = soup.find('div', class_='program-list-container') #changed
     if not schedule_container:
         print("Could not find schedule container")
         return None
 
     #Find the individual channel schedules
-    channel_sections = schedule_container.find_all('div', class_='channel-schedule') # finds each station
+    channel_sections = schedule_container.find_all('div', class_='program-station-schedule') # finds each station
 
     for channel_section in channel_sections:
-        channel_name_tag = channel_section.find('h3', class_='channel-name')  # h2 -> h3
+        channel_name_tag = channel_section.find('h3')  # h2 -> h3
         if channel_name_tag:
             channel_name = channel_name_tag.text.strip()
             if channel_name in ('GMA', 'GTV'): # only process GMA and GTV, corrected this if
                 schedules[channel_name] = []
-                program_items = channel_section.find_all('li', class_='program-item') #programs under each station
+                program_items = channel_section.find_all('li', class_='list-item') #programs under each station #changed
                 for item in program_items:
-                    time_tag = item.find('span', class_='program-time')
+                    time_tag = item.find('span', class_='time')
                     title_tag = item.find('span', class_='program-title') #changed from p to span
                     if title_element and time_tag:
                         time_str = time_tag.text.strip()
@@ -148,7 +148,7 @@ if __name__ == "__main__":
         if schedule_data:
             xml_output = format_schedule_to_xmltv(schedule_data)
             output_dir = "output"
-            output_filename = os.path.join(output_dir, "gma_clickthecity.xml")
+            output_filename = os.path.join(output_dir, "gma.xml") #changed filename
             os.makedirs(output_dir, exist_ok=True)
             with open(output_filename, "w", encoding="utf-8") as f:
                 f.write(xml_output)
