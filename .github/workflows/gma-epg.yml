@@ -27,6 +27,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add output/gma_clickthecity.xml  # Make sure the path is correct
+          git add output/gma.xml  # Corrected output file name
           git commit -m "Update GMA EPG data" || echo "No changes to commit"  # Prevent error if no changes
           git push
