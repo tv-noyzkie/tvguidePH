@@ -59,7 +59,7 @@ def parse_schedule(html):
     schedule_container = soup.find('div', class_='program-list-container') #changed
     if not schedule_container:
         print("Could not find schedule container")
-        return None
+        return {} # Return empty dict to prevent NoneType error
 
     #Find the individual channel schedules
     channel_sections = schedule_container.find_all('div', class_='channel-schedule') # finds each station
@@ -70,7 +70,7 @@ def parse_schedule(html):
             channel_name = channel_name_tag.text.strip()
             if channel_name in ('GMA', 'GTV'): # only process GMA and GTV, corrected this if
                 schedules[channel_name] = []
-                program_items = channel_section.find_all('li', class_='program-item') #programs under each station #changed
+                program_items = channel_section.find_all('li', class_='list-item') #programs under each station #changed
                 for item in program_items:
                     time_tag = item.find('span', class_='program-time')
                     title_tag = item.find('span', class_='program-title') #changed from p to span
@@ -145,14 +145,16 @@ if __name__ == "__main__":
     html_content = fetch_gma_schedule(gma_url)
     if html_content:
         schedule_data = parse_schedule(html_content)
-        xml_output = format_schedule_to_xmltv(schedule_data) # Removed the unnecessary file operations from here
-        output_dir = "output" # added back output dir
-        output_filename = os.path.join(output_dir, "gma.xml") # added back filename
-        os.makedirs(output_dir, exist_ok=True); # added back make dir
-        with open(output_filename, "w", encoding="utf-8") as f: # added back write
-            f.write(xml_output)
-        print(f"Successfully wrote to: {output_filename}")
-        print("GMA EPG script finished.")
+        if schedule_data:
+            xml_output = format_schedule_to_xmltv(schedule_data)
+            output_dir = "output"
+            output_filename = os.path.join(output_dir, "gma.xml")
+            os.makedirs(output_dir, exist_ok=True)
+            with open(output_filename, "w", encoding="utf-8") as f:
+                f.write(xml_output)
+            print(f"Successfully wrote to: {output_filename}")
+        else:
+            print("No schedule data parsed.")
     else:
         print("Failed to fetch schedule.")
-        print("GMA EPG script finished.")
+    print("GMA EPG script finished.")
