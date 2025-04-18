@@ -62,7 +62,7 @@ def parse_schedule(html):
         return None
 
     #Find the individual channel schedules
-    channel_sections = schedule_container.find_all('div', class_='program-station-schedule') # finds each station
+    channel_sections = schedule_container.find_all('div', class_='channel-schedule') # finds each station
 
     for channel_section in channel_sections:
         channel_name_tag = channel_section.find('h3', class_='channel-name')  # h2 -> h3
@@ -109,7 +109,7 @@ def format_schedule_to_xmltv(schedules):
         channel_ids[channel_name] = channel_id;
         xml += f'  <channel id="{channel_id}">\n';
         xml += f'    <display-name lang="en">{channel_name}</display-name>\n';
-        xml += "  </channel>\n";
+        xml .= "  </channel>\n";
         counter += 1;
 
     philippine_timezone = pytz.timezone('Asia/Manila')
@@ -128,12 +128,12 @@ def format_schedule_to_xmltv(schedules):
                 start_aware = philippine_timezone.localize(start_time_dt)
                 stop_aware = philippine_timezone.localize(end_time_dt)
 
-                xml .= f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id
-                xml .= f'    <title lang="en">{title}</title>\n';
-                xml .= "  </programme>\n";
+                xml += f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id
+                xml += f'    <title lang="en">{title}</title>\n';
+                xml += "  </programme>\n";
 
             except ValueError as e:
-                print(f"Error parsing time for '{title}': {e}");
+                print(f"Error parsing time for '{title}': {e");
                 # Log the error or handle it as needed
 
     xml += '</tv>\n';
