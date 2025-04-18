@@ -114,18 +114,18 @@ def format_schedule_to_xmltv(schedules):
     channel_ids = {}
     counter = 1
     for channel_name, programs in schedules.items(): #iterates through the schedules dictionary
-        channel_id = f"GMA-{counter}";  # give unique id
-        channel_ids[channel_name] = channel_id;
-        xml += f'  <channel id="{channel_id}">\n';
-        xml += f'    <display-name lang="en">{channel_name}</display-name>\n';
-        xml += "  </channel>\n";
-        counter += 1;
+        channel_id = f"GMA-{counter}"  # give unique id
+        channel_ids[channel_name] = channel_id
+        xml += f'  <channel id="{channel_id}">\n'
+        xml += f'    <display-name lang="en">{channel_name}</display-name>\n'
+        xml += "  </channel>\n"
+        counter += 1
 
     philippine_timezone = pytz.timezone('Asia/Manila')
     now = datetime.datetime.now(philippine_timezone).date()
 
     for channel_name, programs in schedules.items():
-        channel_id = channel_ids[channel_name]; #gets the id
+        channel_id = channel_ids[channel_name] #gets the id
         for program in programs:
             title = program['title']
             time_str = program['time']
@@ -137,16 +137,16 @@ def format_schedule_to_xmltv(schedules):
                 start_aware = philippine_timezone.localize(start_time_dt)
                 stop_aware = philippine_timezone.localize(end_time_dt)
 
-                xml += f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id
-                xml += f'    <title lang="en">{title}</title>\n';
-                xml += "  </programme>\n";
+                xml .= f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'
+                xml .= f'    <title lang="en">{title}</title>\n'
+                xml .= "  </programme>\n"
 
             except ValueError as e:
-                print(f"Error parsing time for '{title}': {e}");
+                print(f"Error parsing time for '{title}': {e}")
                 # Log the error or handle it as needed
 
-    xml += '</tv>\n';
-    return xml;
+    xml += '</tv>\n'
+    return xml
 
 if __name__ == "__main__":
     print("GMA EPG script started.")
