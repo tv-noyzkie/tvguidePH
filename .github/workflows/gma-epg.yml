@@ -1,16 +1,9 @@
-* Run daily at midnight UTC.
-* Set up a Python environment.
-* Install the necessary Python packages.
-* Execute your Python script.
-* (Optionally) Commit and push the updated  `gma_clickthecity.xml`  file back to your repository.
-
-```yaml
 name: Update GMA EPG
 
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch: #manual trigger
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   build:
@@ -34,7 +27,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add output/gma_clickthecity.xml #make sure the path is correct
-          git commit -m "Update GMA EPG data" || echo "No changes to commit" #prevent error if no changes
+          git add output/gma_clickthecity.xml  # Make sure the path is correct
+          git commit -m "Update GMA EPG data" || echo "No changes to commit"  # Prevent error if no changes
           git push
-```
