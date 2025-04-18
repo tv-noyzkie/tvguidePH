@@ -70,7 +70,7 @@ def parse_schedule(html):
             channel_name = channel_name_tag.text.strip()
             if channel_name in ('GMA', 'GTV'): # only process GMA and GTV, corrected this if
                 schedules[channel_name] = []
-                program_items = channel_section.find_all('li', class_='list-item') #programs under each station #changed
+                program_items = channel_section.find_all('li', class_='program-item') #programs under each station #changed
                 for item in program_items:
                     time_tag = item.find('span', class_='program-time')
                     title_tag = item.find('span', class_='program-title') #changed from p to span
@@ -109,7 +109,7 @@ def format_schedule_to_xmltv(schedules):
         channel_ids[channel_name] = channel_id;
         xml += f'  <channel id="{channel_id}">\n';
         xml += f'    <display-name lang="en">{channel_name}</display-name>\n';
-        xml .= "  </channel>\n";
+        xml += "  </channel>\n";
         counter += 1;
 
     philippine_timezone = pytz.timezone('Asia/Manila')
@@ -133,7 +133,7 @@ def format_schedule_to_xmltv(schedules):
                 xml += "  </programme>\n";
 
             except ValueError as e:
-                print(f"Error parsing time for '{title}': {e");
+                print(f"Error parsing time for '{title}': {e}");
                 # Log the error or handle it as needed
 
     xml += '</tv>\n';
@@ -145,16 +145,14 @@ if __name__ == "__main__":
     html_content = fetch_gma_schedule(gma_url)
     if html_content:
         schedule_data = parse_schedule(html_content)
-        if schedule_data:
-            xml_output = format_schedule_to_xmltv(schedule_data)
-            output_dir = "output"
-            output_filename = os.path.join(output_dir, "gma.xml") #changed filename
-            os.makedirs(output_dir, exist_ok=True)
-            with open(output_filename, "w", encoding="utf-8") as f:
-                f.write(xml_output)
-            print(f"Successfully wrote to: {output_filename}")
-        else:
-            print("No schedule data parsed.")
+        xml_output = format_schedule_to_xmltv(schedule_data) # Removed the unnecessary file operations from here
+        output_dir = "output" # added back output dir
+        output_filename = os.path.join(output_dir, "gma.xml") # added back filename
+        os.makedirs(output_dir, exist_ok=True); # added back make dir
+        with open(output_filename, "w", encoding="utf-8") as f: # added back write
+            f.write(xml_output)
+        print(f"Successfully wrote to: {output_filename}")
+        print("GMA EPG script finished.")
     else:
         print("Failed to fetch schedule.")
-    print("GMA EPG script finished.")
+        print("GMA EPG script finished.")
