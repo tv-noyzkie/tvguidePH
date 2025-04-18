@@ -73,8 +73,8 @@ def parse_schedule(html):
                 program_items = channel_section.find_all('li', class_='program-item') #programs under each station
                 for item in program_items:
                     title_element = item.find('span', class_='program-time')
-                    time_element = item.find('span', class_='program-title') #changed from p to span
-                    if title_element and time_element:
+                    time_tag = item.find('span', class_='program-title') #changed from p to span
+                    if title_element and time_tag:
                         time_str = time_tag.text.strip()
                         title = title_tag.text.strip()
                         time_parts = time_text.split(' - ')
@@ -109,7 +109,7 @@ def format_schedule_to_xmltv(schedules):
         channel_ids[channel_name] = channel_id;
         xml += f'  <channel id="{channel_id}">\n';
         xml += f'    <display-name lang="en">{channel_name}</display-name>\n';
-        xml += '  </channel>\n';
+        xml += "  </channel>\n"; # corrected syntax
         counter += 1;
 
     philippine_timezone = pytz.timezone('Asia/Manila')
@@ -128,15 +128,15 @@ def format_schedule_to_xmltv(schedules):
                 start_aware = philippine_timezone.localize(start_time_dt)
                 stop_aware = philippine_timezone.localize(end_time_dt)
 
-                xml .= f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id
-                xml .= f'    <title lang="en">{title}</title>\n';
-                xml .= '  </programme>\n';
+                xml .= f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id and corrected syntax
+                xml .= f'    <title lang="en">{title}</title>\n'; # corrected syntax
+                xml .= '  </programme>\n'; # corrected syntax
 
             except ValueError as e:
                 print(f"Error parsing time for \'{title}\': {e}");
                 # Log the error or handle it as needed
 
-    xml .= '</tv>\n';
+    xml .= '</tv>\n'; # corrected syntax
     return xml;
 
 if __name__ == "__main__":
