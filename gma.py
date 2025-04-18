@@ -55,26 +55,26 @@ def parse_schedule(html):
     soup = BeautifulSoup(html, 'html.parser')
     schedules = {}
 
-    # Find the schedule listings.  This should contain both GMA and GTV
-    schedule_container = soup.find('div', class_='program-list-container') #changed
+    # Find the schedule listings. This should contain both GMA and GTV
+    schedule_container = soup.find('div', class_='program-list-container')
     if not schedule_container:
         print("Could not find schedule container")
-        return {} # Return empty dict to prevent NoneType error
+        return {}  # Return an empty dictionary
 
-    #Find the individual channel schedules
-    channel_sections = schedule_container.find_all('div', class_='channel-schedule') # finds each station
+    # Find the individual channel schedules
+    channel_sections = schedule_container.find_all('div', class_='channel-schedule')
 
     for channel_section in channel_sections:
-        channel_name_tag = channel_section.find('h3', class_='channel-name')  # h2 -> h3
+        channel_name_tag = channel_section.find('h3', class_='channel-name')
         if channel_name_tag:
             channel_name = channel_name_tag.text.strip()
-            if channel_name in ('GMA', 'GTV'): # only process GMA and GTV, corrected this if
+            if channel_name in ('GMA', 'GTV'):  # Only process GMA and GTV
                 schedules[channel_name] = []
-                program_items = channel_section.find_all('li', class_='list-item') #programs under each station #changed
+                program_items = channel_section.find_all('li', class_='list-item')  # programs under each station
                 for item in program_items:
                     time_tag = item.find('span', class_='program-time')
-                    title_tag = item.find('span', class_='program-title') #changed from p to span
-                    if title_element and time_tag:
+                    title_tag = item.find('span', class_='program-title')
+                    if time_tag and title_tag:
                         time_str = time_tag.text.strip()
                         title = title_tag.text.strip()
                         time_parts = time_text.split(' - ')
@@ -104,19 +104,19 @@ def format_schedule_to_xmltv(schedules):
     
     channel_ids = {}
     counter = 1
-    for channel_name in schedules.keys(): #iterates through the keys
-        channel_id = f"GMA-{counter}";  # give unique id
-        channel_ids[channel_name] = channel_id;
-        xml += f'  <channel id="{channel_id}">\n';
-        xml += f'    <display-name lang="en">{channel_name}</display-name>\n';
-        xml += "  </channel>\n";
-        counter += 1;
+    for channel_name, programs in schedules.items(): #iterates through the schedules dictionary
+        channel_id = f"GMA-{counter}"  # give unique id
+        channel_ids[channel_name] = channel_id
+        xml += f'  <channel id="{channel_id}">\n'
+        xml += f'    <display-name lang="en">{channel_name}</display-name>\n'
+        xml += "  </channel>\n"
+        counter += 1
 
     philippine_timezone = pytz.timezone('Asia/Manila')
     now = datetime.datetime.now(philippine_timezone).date()
 
     for channel_name, programs in schedules.items():
-        channel_id = channel_ids[channel_name]; #gets the id
+        channel_id = channel_ids[channel_name] #gets the id
         for program in programs:
             title = program['title']
             time_str = program['time']
@@ -128,16 +128,16 @@ def format_schedule_to_xmltv(schedules):
                 start_aware = philippine_timezone.localize(start_time_dt)
                 stop_aware = philippine_timezone.localize(end_time_dt)
 
-                xml += f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'; #added channel id
-                xml += f'    <title lang="en">{title}</title>\n';
-                xml += "  </programme>\n";
+                xml .= f'  <programme start="{start_aware.strftime("%Y%m%d%H%M%S %z")}" stop="{stop_aware.strftime("%Y%m%d%H%M%S %z")}" channel="{channel_id}">\n'
+                xml .= f'    <title lang="en">{title}</title>\n'
+                xml .= "  </programme>\n"
 
             except ValueError as e:
-                print(f"Error parsing time for '{title}': {e}");
+                print(f"Error parsing time for '{title}': {e}")
                 # Log the error or handle it as needed
 
-    xml += '</tv>\n';
-    return xml;
+    xml += '</tv>\n'
+    return xml
 
 if __name__ == "__main__":
     print("GMA EPG script started.")
